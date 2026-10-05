@@ -1,0 +1,27 @@
+# Dépendances
+node_modules/
+
+# Build Vite
+dist/
+dist-ssr/
+
+# Cache
+.cache/
+.vite/
+
+# Environnement local
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
