@@ -35,6 +35,7 @@ export function makeHeroSlides(lang: Language): Slide[] {
     },
     {
       img: "/images/tumisu-divorce-6930723_1920.jpg",
+      imgPos: "15% center",
       eyebrow: t(lang, "03 · Ehebegleitung",            "03 · Marriage Support",        "03 · Accompagnement conjugal"),
       title: lang === "en"
         ? <>Love that can be <em className="gold-shine not-italic">renewed</em>.</>

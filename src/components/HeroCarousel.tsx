@@ -4,6 +4,8 @@ import { useLanguage, t } from "../i18n/LanguageContext";
 
 export type Slide = {
   img: string;
+  /** Position CSS de l'image de fond (défaut : "center"). Ex: "left center", "20% 50%" */
+  imgPos?: string;
   eyebrow: string;
   title: ReactNode;
   subtitle: string;
@@ -35,8 +37,8 @@ export default function HeroCarousel({ slides }: { slides: Slide[] }) {
           className={`absolute inset-0 transition-opacity duration-[1400ms] ease-in-out ${i === idx ? "opacity-100" : "opacity-0"}`}
         >
           <div
-            className={`absolute inset-0 bg-cover bg-center ${i === idx ? "hero-open" : ""}`}
-            style={{ backgroundImage: `url(${s.img})` }}
+            className={`absolute inset-0 bg-cover ${i === idx ? "hero-open" : ""}`}
+            style={{ backgroundImage: `url(${s.img})`, backgroundPosition: s.imgPos ?? "center" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/75" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-transparent" />
