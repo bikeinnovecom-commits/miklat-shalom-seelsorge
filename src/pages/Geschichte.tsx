@@ -47,6 +47,15 @@ export default function Geschichte() {
       d_fr: "Accompagnement des personnes en détresse et problèmes émotionnels et spirituels (Autriche et Allemagne).",
     },
     {
+      y: "PhD",
+      t_de: "PhD in Ministry",
+      t_en: "PhD in Ministry",
+      t_fr: "PhD in Ministry",
+      d_de: "Promotion in Ministry mit Schwerpunkt auf postmoderne und interkulturelle Studien — Vertiefung der theologischen und kulturellen Grundlagen der Seelsorge.",
+      d_en: "Doctorate in Ministry with a focus on Postmodern and Intercultural Studies — deepening the theological and cultural foundations of pastoral accompaniment.",
+      d_fr: "Doctorat en Ministry avec spécialisation en études postmodernes et interculturelles — approfondissement des fondements théologiques et culturels de l'accompagnement pastoral.",
+    },
+    {
       y: "2020–2024",
       t_de: "Seminare zu Familienkonflikten",
       t_en: "Family Conflict Seminars",
@@ -163,7 +172,7 @@ export default function Geschichte() {
             {language === "en"
               ? <>Every person who comes to me carries a story that God knows. My calling is to listen — <span className="gold-shine not-italic">with his ears.</span></>
               : language === "fr"
-              ? <>Chaque personne qui vient me voir porte une histoire que Dieu connaît. Ma mission est d'écouter — <span className="gold-shine not-italic">avec ses oreilles.</span></>
+              ? <>Chaque personne qui vient me voir porte une histoire que Dieu connaît. Ma mission est de prêter une oreille attentive.</>
               : <>Jeder Mensch, der zu mir kommt, trägt eine Geschichte, die Gott kennt. Meine Berufung ist es, zuzuhören — <span className="gold-shine not-italic">mit seinen Ohren.</span></>}
           </blockquote>
           <div className="text-sm tracking-[0.3em] uppercase mt-10 text-white/60">
