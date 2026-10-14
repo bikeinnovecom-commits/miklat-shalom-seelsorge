@@ -61,7 +61,7 @@ export default function Begleitung() {
       <section className="py-32 bg-[#f8f5ef]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-6 reveal">
-            — {t(language, "Unsere Haltung", "Our Approach", "Notre posture")}
+            — {t(language, "Meine Haltung", "My Approach", "Ma posture")}
           </div>
           <h2 className="font-serif text-5xl md:text-7xl leading-[1.05] mb-10 reveal-zoom">
             {language === "en"
@@ -72,9 +72,9 @@ export default function Begleitung() {
           </h2>
           <p className="text-xl md:text-2xl text-[#1f2420]/75 font-light leading-relaxed reveal">
             {t(language,
-              "Wir glauben: Heilung geschieht, wenn ein Mensch sich vollständig angenommen fühlt — von Gott und von seinem Gegenüber. Jede unserer Formen ist nur ein Werkzeug. Das Wesentliche ist die Begegnung im Licht der Schrift.",
-              "We believe healing happens when a person feels fully accepted — by God and by the one before them. Each of our forms is only a tool. What matters is the encounter in the light of Scripture.",
-              "Nous croyons que la guérison arrive quand une personne se sent pleinement acceptée — par Dieu et par son interlocuteur. Chaque forme que nous offrons n'est qu'un outil. L'essentiel est la rencontre à la lumière de l'Écriture."
+              "Ich glaube: Heilung geschieht, wenn ein Mensch sich vollständig angenommen fühlt — von Gott und von seinem Gegenüber. Jede Form ist nur ein Werkzeug. Das Wesentliche ist die Begegnung im Licht der Schrift.",
+              "I believe healing happens when a person feels fully accepted — by God and by the one before them. Each form is only a tool. What matters is the encounter in the light of Scripture.",
+              "Je crois que la guérison arrive quand une personne se sent pleinement acceptée — par Dieu et par son interlocuteur. Chaque forme n'est qu'un outil. L'essentiel est la rencontre à la lumière de l'Écriture."
             )}
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function Begleitung() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="flex items-end justify-between mb-16 flex-wrap gap-4">
             <h2 className="font-serif text-5xl md:text-6xl reveal-left">
-              {language === "en" ? <>Our <em className="italic text-[#8a9a82]">Offerings</em></> : language === "fr" ? <>Nos <em className="italic text-[#8a9a82]">Offres</em></> : <>Unsere <em className="italic text-[#8a9a82]">Angebote</em></>}
+              {language === "en" ? <>My <em className="italic text-[#8a9a82]">Offerings</em></> : language === "fr" ? <>Mes <em className="italic text-[#8a9a82]">Offres</em></> : <>Meine <em className="italic text-[#8a9a82]">Angebote</em></>}
             </h2>
             <div className="text-xs tracking-[0.3em] uppercase text-[#1f2420]/60 reveal-right">
               {t(language, "Vier von vielen Wegen", "Four of many paths", "Quatre parmi bien des chemins")}
@@ -111,12 +111,77 @@ export default function Begleitung() {
         </div>
       </section>
 
+      {/* LIEUX D'ACCOMPAGNEMENT */}
+      <section className="py-28 bg-[#f8f5ef]">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+          <div className="text-center mb-16">
+            <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5 reveal">
+              — {t(language, "Wo ich Sie begleite", "Where I accompany you", "Où je vous accompagne")}
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl reveal-zoom">
+              {language === "en"
+                ? <>A first step — <em className="italic text-[#8a9a82]">face to face or online.</em></>
+                : language === "fr"
+                ? <>Un premier pas — <em className="italic text-[#8a9a82]">tête à tête ou en ligne.</em></>
+                : <>Erste Begegnung — <em className="italic text-[#8a9a82]">persönlich oder online.</em></>}
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: "🏛",
+                t_de: "Vor Ort · Aschaffenburg",
+                t_en: "In person · Aschaffenburg",
+                t_fr: "Vor Ort · Aschaffenburg",
+                d_de: "Adventistengemeinde Aschaffenburg — persönliche Begegnungen in einem geschützten, vertrauten Raum.",
+                d_en: "Adventist Church Aschaffenburg — personal meetings in a safe and familiar setting.",
+                d_fr: "Église adventiste d'Aschaffenburg — rencontres personnelles dans un cadre protégé et familier.",
+              },
+              {
+                icon: "🏛",
+                t_de: "Vor Ort · Wertheim",
+                t_en: "In person · Wertheim",
+                t_fr: "Vor Ort · Wertheim",
+                d_de: "Adventistengemeinde Wertheim — Begleitung in ruhiger Atmosphäre, nahe bei Ihnen.",
+                d_en: "Adventist Church Wertheim — accompaniment in a calm atmosphere, close to you.",
+                d_fr: "Église adventiste de Wertheim — accompagnement dans une atmosphère paisible, près de vous.",
+              },
+              {
+                icon: "🏠",
+                t_de: "Bei Ihnen zu Hause",
+                t_en: "At your home",
+                t_fr: "À votre domicile",
+                d_de: "Begleitung bei Ihnen zu Hause — auf Ihren Wunsch und in Ihrer vertrauten Umgebung.",
+                d_en: "Accompaniment at your home — at your request and in your familiar surroundings.",
+                d_fr: "Accompagnement à domicile — selon votre souhait et dans votre environnement familier.",
+              },
+              {
+                icon: "💻",
+                t_de: "Online",
+                t_en: "Online",
+                t_fr: "En ligne",
+                d_de: "Seelsorge per Videokonferenz — ortsunabhängig, diskret und genauso persönlich.",
+                d_en: "Pastoral care via video conference — location-independent, discreet, and just as personal.",
+                d_fr: "Accompagnement par visioconférence — indépendant du lieu, discret et tout aussi personnel.",
+              },
+            ].map((loc, i) => (
+              <div key={i} className="bg-[#efe9df] p-8 reveal" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="text-3xl mb-4">{loc.icon}</div>
+                <h3 className="font-serif text-xl mb-3 text-[#3a4a3f]">{t(language, loc.t_de, loc.t_en, loc.t_fr)}</h3>
+                <p className="text-sm text-[#1f2420]/70 font-light leading-relaxed">{t(language, loc.d_de, loc.d_en, loc.d_fr)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROZESS */}
       <section className="py-32 bg-[#f8f5ef] overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="text-center mb-20">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5 reveal">
-              — {t(language, "Ihr Weg bei uns", "Your journey with us", "Votre chemin avec nous")}
+              — {t(language, "Ihr Weg mit mir", "Your journey with me", "Votre chemin avec moi")}
             </div>
             <h2 className="font-serif text-5xl md:text-6xl reveal-zoom">
               {language === "en"

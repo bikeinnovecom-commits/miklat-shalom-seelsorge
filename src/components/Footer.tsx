@@ -20,8 +20,8 @@ export default function Footer() {
 
   const navLinks = [
     { to: "/",           label: t(language, "Startseite",        "Home",          "Accueil") },
-    { to: "/begleitung", label: t(language, "Unsere Begleitung", "Our Ministry",  "Notre accompagnement") },
-    { to: "/geschichte", label: t(language, "Unsere Geschichte", "Our Story",     "Notre histoire") },
+    { to: "/begleitung", label: t(language, "Meine Begleitung", "My Ministry",  "Mon accompagnement") },
+    { to: "/geschichte", label: t(language, "Meine Geschichte", "My Story",     "Mon histoire") },
     { to: "/termine",    label: t(language, "Terminkalender",    "Appointments",  "Rendez-vous") },
     { to: "/kontakt",    label: t(language, "Kontakt",           "Contact",       "Contact") },
   ];
@@ -44,9 +44,9 @@ export default function Footer() {
             </div>
             <p className="text-white/60 max-w-md font-light leading-relaxed">
               {t(language,
-                "Miklat Shalom — ein Heiligtum des Friedens. Wir begleiten Menschen in Krisen, Übergängen und auf der Suche nach geistlicher Tiefe, getragen von biblischer Weisheit und herzlicher adventistischer Nächstenliebe.",
-                "Miklat Shalom — a sanctuary of peace. We walk alongside people through crises, transitions, and spiritual searching, rooted in biblical wisdom and heartfelt Adventist love for one's neighbour.",
-                "Miklat Shalom — un sanctuaire de paix. Nous accompagnons les personnes dans les crises, les transitions et la quête de profondeur spirituelle, portés par la sagesse biblique et l'amour du prochain adventiste."
+                "Miklat Shalom — ein Heiligtum des Friedens. Ich begleite Menschen in Krisen, Übergängen und auf der Suche nach geistlicher Tiefe, getragen von biblischer Weisheit und herzlicher adventistischer Nächstenliebe.",
+                "Miklat Shalom — a sanctuary of peace. I walk alongside people through crises, transitions, and spiritual searching, rooted in biblical wisdom and heartfelt Adventist love for one's neighbour.",
+                "Miklat Shalom — un sanctuaire de paix. J'accompagne les personnes dans les crises, les transitions et la quête de profondeur spirituelle, porté par la sagesse biblique et l'amour du prochain adventiste."
               )}
             </p>
           </div>

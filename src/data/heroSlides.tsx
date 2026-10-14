@@ -71,9 +71,9 @@ export function makeHeroSlides(lang: Language): Slide[] {
         ? <>Dans la crise, <em className="gold-shine not-italic">pas seul</em>.</>
         : <>In der Krise <em className="gold-shine not-italic">nicht allein</em>.</>,
       subtitle: t(lang,
-        "Wenn das Leben aus den Fugen gerät, braucht die Seele einen Anker. Wir sind da — auch in der dunkelsten Stunde.",
-        "When life falls apart, the soul needs an anchor. We are there — even in the darkest hour.",
-        "Quand la vie s'effondre, l'âme a besoin d'une ancre. Nous sommes là — même dans l'heure la plus sombre."
+        "Wenn das Leben aus den Fugen gerät, braucht die Seele einen Anker. Ich bin da — auch in der dunkelsten Stunde.",
+        "When life falls apart, the soul needs an anchor. I am there — even in the darkest hour.",
+        "Quand la vie s'effondre, l'âme a besoin d'une ancre. Je suis là — même dans l'heure la plus sombre."
       ),
     },
     {
@@ -85,9 +85,9 @@ export function makeHeroSlides(lang: Language): Slide[] {
         ? <>Le deuil a le droit <em className="gold-shine not-italic">d'être</em>.</>
         : <>Trauer darf <em className="gold-shine not-italic">sein</em>.</>,
       subtitle: t(lang,
-        "Der Schmerz des Verlustes braucht Zeit und Raum. Wir begleiten Sie durch die Trauer — mit Würde und Mitgefühl.",
-        "The pain of loss needs time and space. We walk with you through grief — with dignity and compassion.",
-        "La douleur du deuil a besoin de temps et d'espace. Nous vous accompagnons dans le deuil — avec dignité et compassion."
+        "Der Schmerz des Verlustes braucht Zeit und Raum. Ich begleite Sie durch die Trauer — mit Würde und Mitgefühl.",
+        "The pain of loss needs time and space. I walk with you through grief — with dignity and compassion.",
+        "La douleur du deuil a besoin de temps et d'espace. Je vous accompagne dans le deuil — avec dignité et compassion."
       ),
     },
     {

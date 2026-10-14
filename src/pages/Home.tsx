@@ -55,14 +55,14 @@ export default function Home() {
               — {t(language, "Ihr Seelsorger", "Your Pastor", "Votre pasteur")}
             </div>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8 reveal-zoom">
-              {t(language, "Pasteur", "Pastor", "Pasteur")}{" "}
+              {t(language, "Pastor", "Pastor", "Pasteur")}{" "}
               <em className="italic text-[#8a9a82]">Félix</em> Hélan
             </h2>
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-6 reveal">
               {t(language,
-                "Ausgebildeter Seelsorger und Begleiter mit einem Master in Begleitungshilfe. Sein Dienst führte ihn von der Karibik über Österreich bis nach Deutschland — immer nahe bei denen, die Begleitung suchen.",
-                "A trained pastoral counsellor and accompanist with a Master's in supportive care. His ministry took him from the Caribbean through Austria to Germany — always close to those who seek accompaniment.",
-                "Accompagnateur pastoral formé, titulaire d'un Master en relation d'aide. Son ministère l'a conduit des Antilles à l'Autriche jusqu'en Allemagne — toujours proche de ceux qui cherchent un accompagnement."
+                "Ausgebildeter Seelsorger und Begleiter mit einem Master in Counseling. Mein Dienst führte mich von der Karibik über Österreich bis nach Deutschland — immer nahe bei denen, die Begleitung suchen.",
+                "A trained pastoral counsellor and accompanist with a Master's in Counseling. My ministry took me from the Caribbean through Austria to Germany — always close to those who seek accompaniment.",
+                "Accompagnateur pastoral formé, titulaire d'un Master en Counseling. Mon ministère m'a conduit des Antilles à l'Autriche jusqu'en Allemagne — toujours proche de ceux qui cherchent un accompagnement."
               )}
             </p>
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-10 reveal">
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="text-center mb-20">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5 reveal">
-              — {t(language, "Unser Weg", "Our Way", "Notre chemin")}
+              — {t(language, "Mein Weg", "My Way", "Mon chemin")}
             </div>
             <h2 className="font-serif text-5xl md:text-7xl leading-tight max-w-4xl mx-auto reveal-zoom">
               {language === "en"
@@ -97,9 +97,9 @@ export default function Home() {
               {
                 k: "01",
                 t_de: "Gebet",        t_en: "Prayer",     t_fr: "Prière",
-                d_de: "Das Gebet ist unser erster Schritt — bevor wir sprechen, hören wir gemeinsam auf Gott.",
-                d_en: "Prayer is our first step — before we speak, we listen together to God.",
-                d_fr: "La prière est notre premier pas — avant de parler, nous écoutons Dieu ensemble.",
+                d_de: "Das Gebet ist mein erster Schritt — bevor ich spreche, höre ich auf Gott.",
+                d_en: "Prayer is my first step — before I speak, I listen to God.",
+                d_fr: "La prière est mon premier pas — avant de parler, j'écoute Dieu.",
               },
               {
                 k: "02",
@@ -111,9 +111,9 @@ export default function Home() {
               {
                 k: "03",
                 t_de: "Gemeinschaft", t_en: "Community",   t_fr: "Communauté",
-                d_de: "Kein Mensch ist zur Einsamkeit bestimmt. Gemeinsam tragen wir leichter.",
-                d_en: "No one is destined for loneliness. Together we carry things more lightly.",
-                d_fr: "Personne n'est destiné à la solitude. Ensemble, nous portons plus légèrement.",
+                d_de: "Kein Mensch ist zur Einsamkeit bestimmt. Ich bin da, damit Sie leichter tragen können.",
+                d_en: "No one is destined for loneliness. I am here so you can carry things more lightly.",
+                d_fr: "Personne n'est destiné à la solitude. Je suis là pour que vous portiez plus légèrement.",
               },
             ] as const).map((p, i) => (
               <div
@@ -152,7 +152,7 @@ export default function Home() {
               </h2>
             </div>
             <Link to="/geschichte" className="link-ul text-xs tracking-[0.3em] uppercase text-[#1f2420]">
-              {t(language, "Unsere Geschichte ansehen →", "View our story →", "Voir notre histoire →")}
+              {t(language, "Meine Geschichte ansehen →", "View my story →", "Voir mon histoire →")}
             </Link>
           </div>
 

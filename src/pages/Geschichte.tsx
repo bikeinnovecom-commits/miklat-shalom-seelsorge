@@ -12,11 +12,11 @@ export default function Geschichte() {
   const timeline = [
     {
       y: "2010",
-      t_de: "Master in Begleitungshilfe",
-      t_en: "Master's in Supportive Accompaniment",
-      t_fr: "Master en relation d'aide",
-      d_de: "Abschluss des Masters in Begleitungshilfe und seelsorgerlicher Begleitung — Grundlage für einen ganzheitlichen Dienst am Menschen.",
-      d_en: "Completion of the Master's degree in supportive accompaniment and pastoral care — the foundation for a holistic ministry to people.",
+      t_de: "Master in Counseling",
+      t_en: "Master's in Counseling",
+      t_fr: "Master en Counseling",
+      d_de: "Abschluss des Masters in Counseling und seelsorgerlicher Begleitung — Grundlage für einen ganzheitlichen Dienst am Menschen.",
+      d_en: "Completion of the Master's degree in Counseling and pastoral care — the foundation for a holistic ministry to people.",
       d_fr: "Obtention du Master en relation d'aide et accompagnement — fondement d'un service pastoral global de la personne.",
     },
     {
@@ -33,7 +33,7 @@ export default function Geschichte() {
       t_de: "Lehrtätigkeit in Guadeloupe",
       t_en: "Teaching in Guadeloupe",
       t_fr: "Enseignement en Guadeloupe",
-      d_de: "Unterricht in Begleitungshilfe und Seelsorge am Institut Théologique Supérieur de Guadeloupe — Weitergabe des Wissens an die nächste Generation.",
+      d_de: "Unterricht in Counseling und Seelsorge am Institut Théologique Supérieur de Guadeloupe.",
       d_en: "Teaching courses in supportive accompaniment and pastoral care at the Institut Théologique Supérieur de Guadeloupe.",
       d_fr: "Enseignement des cours de relation d'aide et d'accompagnement à l'Institut Théologique Supérieur de Guadeloupe.",
     },
@@ -67,9 +67,9 @@ export default function Geschichte() {
   ];
 
   const values = [
-    { t_de: "Biblische Fundierung",  t_en: "Biblical Foundation",    t_fr: "Fondement biblique",    d_de: "Alles, was wir tun, wurzelt im Wort Gottes — unserem unveränderlichen Anker.", d_en: "Everything we do is rooted in God's Word — our unchanging anchor.", d_fr: "Tout ce que nous faisons est enraciné dans la Parole de Dieu — notre ancre immuable." },
+    { t_de: "Biblische Fundierung",  t_en: "Biblical Foundation",    t_fr: "Fondement biblique",    d_de: "Alles, was ich tue, wurzelt im Wort Gottes — meinem unveränderlichen Anker.", d_en: "Everything I do is rooted in God's Word — my unchanging anchor.", d_fr: "Tout ce que je fais est enraciné dans la Parole de Dieu — mon ancre immuable." },
     { t_de: "Geistliche Tiefe",      t_en: "Spiritual Depth",        t_fr: "Profondeur spirituelle", d_de: "Seelsorge ist mehr als Gespräch — sie ist Begegnung im Geist.", d_en: "Pastoral care is more than conversation — it is encounter in the Spirit.", d_fr: "La cure d'âme est plus qu'une conversation — c'est une rencontre dans l'Esprit." },
-    { t_de: "Nächstenliebe",         t_en: "Love of Neighbour",      t_fr: "Amour du prochain",      d_de: "Das höchste Gebot ist unser Maßstab: Liebe Gott und deinen Nächsten.", d_en: "The greatest commandment is our standard: Love God and your neighbour.", d_fr: "Le plus grand commandement est notre mesure : Aimer Dieu et son prochain." },
+    { t_de: "Nächstenliebe",         t_en: "Love of Neighbour",      t_fr: "Amour du prochain",      d_de: "Das höchste Gebot ist mein Maßstab: Liebe Gott und deinen Nächsten.", d_en: "The greatest commandment is my standard: Love God and your neighbour.", d_fr: "Le plus grand commandement est ma mesure : Aimer Dieu et son prochain." },
     { t_de: "Verschwiegenheit",      t_en: "Pastoral Secrecy",       t_fr: "Secret pastoral",        d_de: "Alles Geteilte bleibt im Schutz der Seelsorge-Beziehung.", d_en: "Everything shared remains protected within the pastoral relationship.", d_fr: "Tout ce qui est partagé reste protégé dans le cadre de la relation pastorale." },
   ];
 
@@ -86,16 +86,16 @@ export default function Geschichte() {
           </div>
           <h2 className="font-serif text-5xl md:text-7xl leading-tight mb-10 reveal-zoom">
             {language === "en"
-              ? <>"We were not <em className="italic text-[#8a9a82]">founded</em> —<br />we <span className="gold-shine">grew</span>."</>
+              ? <>"I was not <em className="italic text-[#8a9a82]">founded</em> —<br />I <span className="gold-shine">grew</span>."</>
               : language === "fr"
-              ? <>"Nous n'avons pas été <em className="italic text-[#8a9a82]">fondés</em> —<br />nous avons <span className="gold-shine">grandi</span>."</>
-              : <>"Wir wurden <em className="italic text-[#8a9a82]">nicht gegründet</em> —<br />wir sind <span className="gold-shine">gewachsen</span>."</>}
+              ? <>"Je n'ai pas été <em className="italic text-[#8a9a82]">fondé</em> —<br />j'ai <span className="gold-shine">grandi</span>."</>
+              : <>"Ich wurde <em className="italic text-[#8a9a82]">nicht gegründet</em> —<br />ich bin <span className="gold-shine">gewachsen</span>."</>}
           </h2>
           <p className="text-lg md:text-xl font-light leading-relaxed text-[#1f2420]/75 reveal">
             {t(language,
-              "Unsere Geschichte beginnt nicht mit einem Plan, sondern mit einem Ruf: Was braucht ein Mensch, um wieder aufatmen zu können? Vor über zwanzig Jahren haben wir angefangen, auf diese Frage zu antworten. Wir antworten immer noch.",
-              "Our story begins not with a plan but with a call: what does a person need to breathe freely again? More than twenty years ago we began to answer that question. We are still answering it.",
-              "Notre histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de vingt ans, nous avons commencé à répondre à cette question. Nous y répondons encore."
+              "Meine Geschichte beginnt nicht mit einem Plan, sondern mit einem Ruf: Was braucht ein Mensch, um wieder aufatmen zu können? Vor über zehn Jahren habe ich angefangen, auf diese Frage zu antworten. Ich antworte immer noch.",
+              "My story begins not with a plan but with a call: what does a person need to breathe freely again? More than ten years ago I began to answer that question. I am still answering it.",
+              "Mon histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de dix ans, j'ai commencé à répondre à cette question. J'y réponds encore."
             )}
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function Geschichte() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-16 text-center">
             <h2 className="font-serif text-5xl md:text-6xl reveal-zoom">
-              {language === "en" ? <>Our <em className="italic text-[#8a9a82]">Chronicle</em></> : language === "fr" ? <>Notre <em className="italic text-[#8a9a82]">Chronique</em></> : <>Unsere <em className="italic text-[#8a9a82]">Chronik</em></>}
+              {language === "en" ? <>My <em className="italic text-[#8a9a82]">Chronicle</em></> : language === "fr" ? <>Ma <em className="italic text-[#8a9a82]">Chronique</em></> : <>Meine <em className="italic text-[#8a9a82]">Chronik</em></>}
             </h2>
           </div>
 
@@ -115,8 +115,8 @@ export default function Geschichte() {
             <div className="space-y-16">
               {timeline.map((e, i) => (
                 <div key={e.y} className={`relative grid md:grid-cols-2 gap-10 items-center ${i % 2 === 0 ? "" : "md:[&>*:first-child]:order-2"}`}>
-                  <div className={`md:text-right ${i % 2 === 0 ? "" : "md:text-left"} reveal-left pl-16 md:pl-0`}>
-                    <div className="font-serif text-6xl md:text-7xl text-[#c9a96a]">{e.y}</div>
+                  <div className={`md:text-right ${i % 2 === 0 ? "" : "md:text-left"} reveal-left pl-16 md:pl-0 flex ${i % 2 === 0 ? "md:justify-end" : "md:justify-start"} items-center`}>
+                    <div className="font-serif text-5xl text-[#c9a96a]/30 select-none">✦</div>
                   </div>
                   <div className={`${i % 2 === 0 ? "md:pl-10" : "md:pr-10 md:text-right"} reveal-right pl-16 md:pl-10`}>
                     <h3 className="font-serif text-2xl md:text-3xl mb-3">{t(language, e.t_de, e.t_en, e.t_fr)}</h3>
@@ -140,10 +140,10 @@ export default function Geschichte() {
           </div>
           <div className="reveal-right">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-6">
-              — {t(language, "Unsere Werte", "Our Values", "Nos valeurs")}
+              — {t(language, "Meine Werte", "My Values", "Mes valeurs")}
             </div>
             <h2 className="font-serif text-5xl md:text-6xl mb-10 leading-tight">
-              {language === "en" ? <>What <em className="italic text-[#8a9a82]">sustains</em> us.</> : language === "fr" ? <>Ce qui nous <em className="italic text-[#8a9a82]">porte</em>.</> : <>Was uns <em className="italic text-[#8a9a82]">trägt</em>.</>}
+              {language === "en" ? <>What <em className="italic text-[#8a9a82]">sustains</em> me.</> : language === "fr" ? <>Ce qui me <em className="italic text-[#8a9a82]">porte</em>.</> : <>Was mich <em className="italic text-[#8a9a82]">trägt</em>.</>}
             </h2>
             {values.map((v, i) => (
               <div key={v.t_de} className="border-t border-[#c9a96a]/30 py-6 reveal" style={{ animationDelay: `${i * 0.1}s` }}>
@@ -161,10 +161,10 @@ export default function Geschichte() {
           <div className="font-serif text-6xl text-[#c9a96a] mb-6">"</div>
           <blockquote className="font-serif text-3xl md:text-5xl italic leading-tight reveal-zoom">
             {language === "en"
-              ? <>Every person who walks through our door carries a story that God knows. Our work is to listen — <span className="gold-shine not-italic">with his ears.</span></>
+              ? <>Every person who comes to me carries a story that God knows. My calling is to listen — <span className="gold-shine not-italic">with his ears.</span></>
               : language === "fr"
-              ? <>Chaque personne qui franchit notre porte porte une histoire que Dieu connaît. Notre mission est d'écouter — <span className="gold-shine not-italic">avec ses oreilles.</span></>
-              : <>Jeder Mensch, der durch unsere Tür geht, trägt eine Geschichte, die Gott kennt. Unser Werk ist es, zuzuhören — <span className="gold-shine not-italic">mit seinen Ohren.</span></>}
+              ? <>Chaque personne qui vient me voir porte une histoire que Dieu connaît. Ma mission est d'écouter — <span className="gold-shine not-italic">avec ses oreilles.</span></>
+              : <>Jeder Mensch, der zu mir kommt, trägt eine Geschichte, die Gott kennt. Meine Berufung ist es, zuzuhören — <span className="gold-shine not-italic">mit seinen Ohren.</span></>}
           </blockquote>
           <div className="text-sm tracking-[0.3em] uppercase mt-10 text-white/60">
             — {t(language, "Pasteur Félix Hélan", "Pastor Félix Hélan", "Pasteur Félix Hélan")}

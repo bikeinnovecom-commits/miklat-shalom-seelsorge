@@ -25,8 +25,8 @@ export default function Nav() {
 
   const links = [
     { to: "/",           label: t(language, "Startseite",        "Home",         "Accueil") },
-    { to: "/begleitung", label: t(language, "Unsere Begleitung", "Our Ministry", "Notre accompagnement") },
-    { to: "/geschichte", label: t(language, "Unsere Geschichte", "Our Story",    "Notre histoire") },
+    { to: "/begleitung", label: t(language, "Meine Begleitung", "My Ministry", "Mon accompagnement") },
+    { to: "/geschichte", label: t(language, "Meine Geschichte", "My Story",    "Mon histoire") },
     { to: "/termine",    label: t(language, "Terminkalender",    "Appointments", "Rendez-vous") },
     { to: "/kontakt",    label: t(language, "Kontakt",           "Contact",      "Contact") },
   ];

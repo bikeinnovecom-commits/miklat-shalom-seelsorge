@@ -55,9 +55,9 @@ export default function Kontakt() {
                 </p>
                 <p className="text-[#1f2420]/70 font-light">
                   {t(language,
-                    "Vielen Dank für Ihr Vertrauen. Wir antworten innerhalb von 24 Stunden — mit der Sorgfalt, die Ihre Seele verdient.",
-                    "Thank you for your trust. We will reply within 24 hours — with the care your soul deserves.",
-                    "Merci pour votre confiance. Nous répondrons dans les 24 heures — avec le soin que votre âme mérite."
+                    "Vielen Dank für Ihr Vertrauen. Ich antworte innerhalb von 24 Stunden — mit der Sorgfalt, die Ihre Seele verdient.",
+                    "Thank you for your trust. I will reply within 24 hours — with the care your soul deserves.",
+                    "Merci pour votre confiance. Je répondrai dans les 24 heures — avec le soin que votre âme mérite."
                   )}
                 </p>
               </div>
@@ -175,7 +175,7 @@ export default function Kontakt() {
           {/* Info block */}
           <div className="reveal-right space-y-8">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5">
-              — {t(language, "Besuchen Sie uns", "Visit us", "Nous rendre visite")}
+              — {t(language, "Besuchen Sie mich", "Visit me", "Me rendre visite")}
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
               {t(language, "Im Herzen von", "In the heart of", "Au cœur de")}{" "}
