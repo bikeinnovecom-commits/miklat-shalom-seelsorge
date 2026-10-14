@@ -28,9 +28,9 @@ export function makeHeroSlides(lang: Language): Slide[] {
         ? <>La Parole de Dieu comme <em className="gold-shine not-italic">boussole</em>.</>
         : <>Gottes Wort als <em className="gold-shine not-italic">Kompass</em>.</>,
       subtitle: t(lang,
-        "Die Heilige Schrift als lebendige Orientierung — für Entscheidungen, Beziehungen und Lebensfragen.",
-        "Holy Scripture as living guidance — for decisions, relationships, and life's questions.",
-        "La Sainte Écriture comme orientation vivante — pour les décisions, les relations et les questions de la vie."
+        "Die Heiligen Schriften als lebendige Orientierung — für Entscheidungen, Beziehungen und Lebensfragen.",
+        "The Holy Scriptures as living guidance — for decisions, relationships, and life's questions.",
+        "Les Saintes Écritures comme orientation vivante — pour les décisions, les relations et les questions de la vie."
       ),
     },
     {

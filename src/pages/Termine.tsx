@@ -42,13 +42,6 @@ export default function Termine() {
   const nextMonth = () => { if (month === 11) { setMonth(0); setYear(y => y + 1); } else setMonth(m => m + 1); setSelected(null); setSelectedTime(null); };
 
   const times = ["09:00","10:00","11:00","14:00","15:00","16:00","17:00"];
-  const pricingRows = [
-    { t_de: "Erstgespräch (15 Min.)",       t_en: "Initial conversation (15 min.)",   t_fr: "Entretien initial (15 min.)",     price: t(language, "Kostenlos", "Free", "Gratuit") },
-    { t_de: "Einzelsitzung (60 Min.)",       t_en: "Individual session (60 min.)",     t_fr: "Séance individuelle (60 min.)",   price: "€ 80" },
-    { t_de: "Ehegespräch (90 Min.)",         t_en: "Marriage session (90 min.)",       t_fr: "Entretien conjugal (90 min.)",    price: "€ 120" },
-    { t_de: "Gebet & Heilung (60 Min.)",     t_en: "Prayer & Healing (60 min.)",       t_fr: "Prière & guérison (60 min.)",    price: "€ 60" },
-    { t_de: "Begleitung auf Spendenbasis",   t_en: "Donation-based accompaniment",     t_fr: "Accompagnement par donation",     price: t(language, "nach Vereinbarung", "by arrangement", "selon accord") },
-  ];
 
   return (
     <main className="page-enter">
@@ -190,26 +183,7 @@ export default function Termine() {
               </ul>
             </div>
 
-            <div className="border border-[#c9a96a]/30 p-8">
-              <h3 className="font-serif text-2xl mb-6">
-                {t(language, "Honorarübersicht", "Fee Schedule", "Grille honoraires")}
-              </h3>
-              <div className="space-y-4">
-                {pricingRows.map((row, i) => (
-                  <div key={i} className="flex justify-between items-center border-b border-[#c9a96a]/20 pb-3">
-                    <span className="text-sm font-light text-[#1f2420]/80">{t(language, row.t_de, row.t_en, row.t_fr)}</span>
-                    <span className="font-serif text-lg text-[#c9a96a]">{row.price}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs text-[#1f2420]/50 mt-6 font-light">
-                {t(language,
-                  "Soziale Ermäßigungen möglich. Kein Mensch wird wegen finanzieller Grenzen abgewiesen.",
-                  "Social reductions available. No one is turned away due to financial limitations.",
-                  "Des réductions sociales sont possibles. Personne n'est refusé pour des raisons financières."
-                )}
-              </p>
-            </div>
+
           </div>
         </div>
       </section>

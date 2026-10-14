@@ -52,12 +52,6 @@ export default function Begleitung() {
     { n: "IV",  t_de: "Nachbegleitung",   t_en: "Follow-up care",    t_fr: "Suivi pastoral",       d_de: "Regelmäßige Begegnungen in Ihrem Rhythmus — mit Sabbatpausen, wenn nötig.", d_en: "Regular meetings at your own rhythm — with Sabbath rest when needed.", d_fr: "Rencontres régulières à votre rythme — avec repos du Sabbat si nécessaire." },
   ];
 
-  const testimonials = [
-    { q_de: "Nach Jahren innerer Leere fand ich hier Worte, die mich wieder atmen ließen. Der Glaube hat mich nicht verlassen — ich hatte ihn nur nicht mehr gehört.", q_en: "After years of inner emptiness I found words here that let me breathe again. Faith had not left me — I had simply stopped hearing it.", q_fr: "Après des années de vide intérieur, j'ai trouvé ici des mots qui m'ont permis de respirer à nouveau. La foi ne m'avait pas abandonné — je l'avais simplement oubliée.", n: "Miriam, 38" },
-    { q_de: "Die biblische Grundlage hat mir geholfen, meine Ehe auf einem neuen Fundament aufzubauen. Wir sprechen wieder — miteinander und mit Gott.", q_en: "The biblical foundation helped me rebuild my marriage on a new footing. We speak again — with each other and with God.", q_fr: "Le fondement biblique m'a aidé à reconstruire mon mariage sur de nouvelles bases. Nous nous parlons à nouveau — entre nous et avec Dieu.", n: "Thomas & Ruth" },
-    { q_de: "Das gemeinsame Gebet hat Türen in mir geöffnet, die ich für verschlossen gehalten hatte. Heilung ist möglich — ich erlebe sie.", q_en: "The shared prayer opened doors in me that I thought were shut forever. Healing is possible — I am living it.", q_fr: "La prière commune a ouvert en moi des portes que je croyais fermées. La guérison est possible — je la vis.", n: "Esperanza, 45" },
-  ];
-
   return (
     <main className="page-enter">
       <HeroCarousel slides={slides} />
@@ -148,36 +142,12 @@ export default function Begleitung() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="py-32 bg-[#3a4a3f] text-[#f8f5ef] overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5 reveal">
-            — {t(language, "Stimmen aus der Begleitung", "Voices from our ministry", "Témoignages de l'accompagnement")}
-          </div>
-          <h2 className="font-serif text-5xl md:text-6xl mb-16 max-w-3xl reveal-zoom">
-            {language === "en"
-              ? <>What those we accompany <em className="italic">share</em>.</>
-              : language === "fr"
-              ? <>Ce que nos accompagnés <em className="italic">témoignent</em>.</>
-              : <>Was unsere Begleiteten <em className="italic">erzählen</em>.</>}
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {testimonials.map((tst, i) => (
-              <blockquote key={i} className="border-l-2 border-[#c9a96a] pl-6 reveal" style={{ animationDelay: `${i * 0.2}s` }}>
-                <p className="font-serif text-xl md:text-2xl italic leading-relaxed mb-6">
-                  "{t(language, tst.q_de, tst.q_en, tst.q_fr)}"
-                </p>
-                <div className="text-xs tracking-[0.3em] uppercase text-[#c9a96a]">— {tst.n}</div>
-              </blockquote>
-            ))}
-          </div>
-
-          <div className="text-center mt-20">
-            <Link to="/termine" className="inline-block px-10 py-5 bg-[#c9a96a] text-[#1f2420] text-xs tracking-[0.3em] uppercase hover:bg-white transition-all duration-500">
-              {t(language, "Jetzt Termin anfragen", "Request appointment now", "Demander un rendez-vous maintenant")}
-            </Link>
-          </div>
+      {/* CTA */}
+      <section className="py-20 bg-[#3a4a3f] text-[#f8f5ef]">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
+          <Link to="/termine" className="inline-block px-10 py-5 bg-[#c9a96a] text-[#1f2420] text-xs tracking-[0.3em] uppercase hover:bg-white transition-all duration-500">
+            {t(language, "Jetzt Termin anfragen", "Request appointment now", "Demander un rendez-vous maintenant")}
+          </Link>
         </div>
       </section>
     </main>

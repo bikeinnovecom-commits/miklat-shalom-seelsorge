@@ -179,30 +179,29 @@ export default function Kontakt() {
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
               {t(language, "Im Herzen von", "In the heart of", "Au cœur de")}{" "}
-              <em className="italic text-[#8a9a82]">Berlin</em>.
+              <em className="italic text-[#8a9a82]">Bayern</em>.
             </h2>
-            <p className="text-lg text-[#1f2420]/70 font-light leading-relaxed">
+            <p className="font-serif text-xl italic text-[#3a4a3f] leading-relaxed border-l-2 border-[#c9a96a] pl-5">
               {t(language,
-                "Tiergartenufer 15 · 10785 Berlin · Direkt am Landwehrkanal.",
-                "Tiergartenufer 15 · 10785 Berlin · Right on the Landwehr Canal.",
-                "Tiergartenufer 15 · 10785 Berlin · Directement au bord du Landwehrkanal."
+                '„Kommt her zu mir alle, die ihr mühselig und beladen seid; ich will euch erquicken." — Matthäus 11,28',
+                '"Come to me, all you who are weary and burdened, and I will give you rest." — Matthew 11:28',
+                '« Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos. » — Matthieu 11.28'
               )}
             </p>
 
             <div className="overflow-hidden h-72">
               <img
-                src="/images/joelmonteil-mountain-5360913_1920.jpg"
-                alt={t(language, "Miklat Shalom Außenansicht", "Miklat Shalom exterior", "Extérieur Miklat Shalom")}
+                src="/images/helan-bayerische-alpen.jpg"
+                alt={t(language, "Bayerische Alpen — Miklat Shalom", "Bavarian Alps — Miklat Shalom", "Alpes bavaroises — Miklat Shalom")}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-[2000ms]"
               />
             </div>
 
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
-                { t_de: "Telefon",      t_en: "Phone",          t_fr: "Téléphone",   v: "+49 30 123 456 78" },
-                { t_de: "E-Mail",       t_en: "Email",          t_fr: "E-mail",      v: "info@miklat-shalom.de" },
-                { t_de: "Bürozeiten",   t_en: "Office hours",   t_fr: "Horaires",    v: t(language, "Mo–Fr 9–18 Uhr", "Mon–Fri 9 am–6 pm", "Lun–Ven 9h–18h") },
-                { t_de: "Sabbat",       t_en: "Sabbath",        t_fr: "Sabbat",      v: t(language, "Ruhetag — Stille", "Day of rest — Stillness", "Jour de repos — Silence") },
+                { t_de: "Telefon",  t_en: "Phone",    t_fr: "Téléphone",  v: "+49 159 0486 0061" },
+                { t_de: "E-Mail",   t_en: "Email",    t_fr: "E-mail",     v: "info@miklat-shalom.de" },
+                { t_de: "Sabbat",   t_en: "Sabbath",  t_fr: "Sabbat",     v: t(language, "Ruhetag — Stille", "Day of rest — Stillness", "Jour de repos — Silence") },
               ].map(row => (
                 <div key={row.t_de} className="border-t border-[#c9a96a]/30 pt-5">
                   <div className="text-[10px] tracking-[0.3em] uppercase text-[#c9a96a] mb-1">

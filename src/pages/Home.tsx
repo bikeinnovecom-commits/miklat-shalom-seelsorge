@@ -38,7 +38,7 @@ export default function Home() {
             <div className="relative">
               <img
                 src="/images/pexels-gustavo-fring-7447245.jpg"
-                alt={t(language, "Pfarrer Daniel Müller", "Pastor Daniel Müller", "Pasteur Daniel Müller")}
+                alt={t(language, "Pasteur Félix Hélan", "Pastor Félix Hélan", "Pasteur Félix Hélan")}
                 className="w-full h-[640px] object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms]"
               />
               <div className="absolute -bottom-8 -right-8 bg-[#c9a96a] text-[#1f2420] p-8 w-56">
@@ -55,14 +55,14 @@ export default function Home() {
               — {t(language, "Ihr Seelsorger", "Your Pastor", "Votre pasteur")}
             </div>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8 reveal-zoom">
-              {t(language, "Pfarrer", "Pastor", "Pasteur")}{" "}
-              <em className="italic text-[#8a9a82]">Daniel</em> Müller
+              {t(language, "Pasteur", "Pastor", "Pasteur")}{" "}
+              <em className="italic text-[#8a9a82]">Félix</em> Hélan
             </h2>
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-6 reveal">
               {t(language,
-                "Ordinierter Pfarrer, ausgebildeter Seelsorger und seit über zwei Jahrzehnten treuer Adventist. Seine Arbeit verbindet tiefes biblisches Wissen mit einem offenen, urteilsfreien Herzen.",
-                "An ordained pastor, trained pastoral counsellor, and committed Adventist for over two decades. His work combines deep biblical knowledge with an open, non-judgmental heart.",
-                "Pasteur ordonné, accompagnateur pastoral formé et adventiste engagé depuis plus de vingt ans. Son travail allie une profonde connaissance biblique à un cœur ouvert et bienveillant."
+                "Ausgebildeter Seelsorger und Begleiter mit einem Master in Begleitungshilfe. Sein Dienst führte ihn von der Karibik über Österreich bis nach Deutschland — immer nahe bei denen, die Begleitung suchen.",
+                "A trained pastoral counsellor and accompanist with a Master's in supportive care. His ministry took him from the Caribbean through Austria to Germany — always close to those who seek accompaniment.",
+                "Accompagnateur pastoral formé, titulaire d'un Master en relation d'aide. Son ministère l'a conduit des Antilles à l'Autriche jusqu'en Allemagne — toujours proche de ceux qui cherchent un accompagnement."
               )}
             </p>
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-10 reveal">
@@ -104,9 +104,9 @@ export default function Home() {
               {
                 k: "02",
                 t_de: "Gottes Wort",  t_en: "God's Word",  t_fr: "La Parole de Dieu",
-                d_de: "Die Heilige Schrift als lebendige Quelle: Orientierung, Trost und Kraft für jeden Lebensweg.",
-                d_en: "Holy Scripture as a living source: guidance, comfort, and strength for every life's path.",
-                d_fr: "La Sainte Écriture comme source vivante : orientation, réconfort et force pour chaque chemin de vie.",
+                d_de: "Die Heiligen Schriften als lebendige Quelle: Orientierung, Trost und Kraft für jeden Lebensweg.",
+                d_en: "The Holy Scriptures as a living source: guidance, comfort, and strength for every life's path.",
+                d_fr: "Les Saintes Écritures comme source vivante : orientation, réconfort et force pour chaque chemin de vie.",
               },
               {
                 k: "03",

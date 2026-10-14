@@ -10,12 +10,60 @@ export default function Geschichte() {
   const slides = makeHeroSlides(language);
 
   const timeline = [
-    { y: "2004", t_de: "Die ersten Schritte",        t_en: "First steps",              t_fr: "Les premiers pas",          d_de: "Pfarrer Daniel Müller eröffnet sein erstes Seelsorgebüro in einem umgenutzten Gemeinderaum in Berlin-Mitte.", d_en: "Pastor Daniel Müller opens his first pastoral office in a repurposed community room in central Berlin.", d_fr: "Le Pasteur Daniel Müller ouvre son premier bureau pastoral dans une salle communautaire réaménagée au centre de Berlin." },
-    { y: "2009", t_de: "Ehebegleitung",              t_en: "Marriage accompaniment",   t_fr: "Accompagnement conjugal",   d_de: "Das Angebot für Ehepaare in Krisen wird eingeführt — und binnen eines Jahres zur meistgesuchten Form.", d_en: "The service for couples in crisis is introduced — and within a year becomes the most sought-after offering.", d_fr: "L'accompagnement pour les couples en crise est introduit — et devient en moins d'un an l'offre la plus demandée." },
-    { y: "2012", t_de: "Neue Räume am Tiergarten",  t_en: "New rooms at Tiergarten",  t_fr: "Nouveaux locaux au Tiergarten", d_de: "Ein helles Altbauensemble mit eigenem Gartenbereich wird zur neuen Heimat — ein Ort der Stille mitten in der Stadt.", d_en: "A bright historic building ensemble with its own garden becomes the new home — a place of stillness in the middle of the city.", d_fr: "Un ensemble de bâtiments anciens lumineux avec son propre jardin devient le nouveau foyer — un lieu de silence au cœur de la ville." },
-    { y: "2018", t_de: "Ausbildung & Vernetzung",   t_en: "Training & Networking",    t_fr: "Formation & Réseau",        d_de: "Drei weitere Seelsorgerinnen werden ausgebildet; Kooperation mit adventistischen Gemeinden in ganz Deutschland.", d_en: "Three more pastoral counsellors are trained; cooperation with Adventist congregations throughout Germany.", d_fr: "Trois autres accompagnatrices pastorales sont formées ; coopération avec des communautés adventistes dans toute l'Allemagne." },
-    { y: "2023", t_de: "Gebet-Abende & Sabbat-Retreats", t_en: "Prayer Evenings & Sabbath Retreats", t_fr: "Soirées de prière & Retraites sabbatiques", d_de: "Erste monatliche Gebets-Abende und Sabbat-Rückzüge in der märkischen Landschaft.", d_en: "First monthly prayer evenings and Sabbath retreats in the Brandenburg countryside.", d_fr: "Premières soirées de prière mensuelles et retraites sabbatiques dans la campagne brandebourgeoise." },
-    { y: "2026", t_de: "Heute",                     t_en: "Today",                    t_fr: "Aujourd'hui",               d_de: "Fünf Seelsorgerinnen, vier ruhige Gesprächsräume und ein lebendiger Ort des Friedens für viele.", d_en: "Five pastoral counsellors, four quiet conversation rooms, and a vibrant place of peace for many.", d_fr: "Cinq accompagnatrices pastorales, quatre salles d'entretien calmes et un lieu vivant de paix pour beaucoup." },
+    {
+      y: "2010",
+      t_de: "Master in Begleitungshilfe",
+      t_en: "Master's in Supportive Accompaniment",
+      t_fr: "Master en relation d'aide",
+      d_de: "Abschluss des Masters in Begleitungshilfe und seelsorgerlicher Begleitung — Grundlage für einen ganzheitlichen Dienst am Menschen.",
+      d_en: "Completion of the Master's degree in supportive accompaniment and pastoral care — the foundation for a holistic ministry to people.",
+      d_fr: "Obtention du Master en relation d'aide et accompagnement — fondement d'un service pastoral global de la personne.",
+    },
+    {
+      y: "2011–2015",
+      t_de: "Begleitung in Krisen",
+      t_en: "Accompaniment in Crisis",
+      t_fr: "Accompagnement des personnes en détresse",
+      d_de: "Begleitung von Personen in emotionaler und spiritueller Not. Einzel- und Eheberatung. Bewältigung und Lösung von Ehekonflikten.",
+      d_en: "Accompaniment of people in emotional and spiritual distress. Individual and marital counselling. Management and resolution of marital conflicts.",
+      d_fr: "Accompagnement des personnes en situation de détresse émotionnelle et spirituelle. Entretiens et conseils conjugaux. Gestion et résolution des conflits conjugaux.",
+    },
+    {
+      y: "2016",
+      t_de: "Lehrtätigkeit in Guadeloupe",
+      t_en: "Teaching in Guadeloupe",
+      t_fr: "Enseignement en Guadeloupe",
+      d_de: "Unterricht in Begleitungshilfe und Seelsorge am Institut Théologique Supérieur de Guadeloupe — Weitergabe des Wissens an die nächste Generation.",
+      d_en: "Teaching courses in supportive accompaniment and pastoral care at the Institut Théologique Supérieur de Guadeloupe.",
+      d_fr: "Enseignement des cours de relation d'aide et d'accompagnement à l'Institut Théologique Supérieur de Guadeloupe.",
+    },
+    {
+      y: "2018–2020",
+      t_de: "Dienst in Österreich & Deutschland",
+      t_en: "Ministry in Austria & Germany",
+      t_fr: "Accompagnement en Autriche et Allemagne",
+      d_de: "Seelsorgerliche Begleitung von Menschen in emotionaler und spiritueller Not in Österreich und Deutschland.",
+      d_en: "Pastoral accompaniment of people with emotional and spiritual problems in Austria and Germany.",
+      d_fr: "Accompagnement des personnes en détresse et problèmes émotionnels et spirituels (Autriche et Allemagne).",
+    },
+    {
+      y: "2020–2024",
+      t_de: "Seminare zu Familienkonflikten",
+      t_en: "Family Conflict Seminars",
+      t_fr: "Séminaires sur les conflits familiaux",
+      d_de: "Leitung von Seminaren zur Bewältigung und Lösung familiärer Konflikte — für Familien, Gemeinden und Beratungsfachkräfte.",
+      d_en: "Leadership of seminars on the management and resolution of family conflicts — for families, congregations and counselling professionals.",
+      d_fr: "Séminaire sur la gestion et résolution des conflits familiaux — pour les familles, les communautés et les professionnels de l'accompagnement.",
+    },
+    {
+      y: "2024–2026",
+      t_de: "Gefängnisseelsorge Aschaffenburg",
+      t_en: "Prison Chaplaincy Aschaffenburg",
+      t_fr: "Aumônerie de prison à Aschaffenburg",
+      d_de: "Seelsorgedienst im Gefängnis der Justizvollzugsanstalt Aschaffenburg — Begleitung von Inhaftierten auf dem Weg der inneren Heilung und Hoffnung.",
+      d_en: "Chaplaincy service at the detention centre of Aschaffenburg — accompanying prisoners on the path of inner healing and hope.",
+      d_fr: "Aumônerie de prison au centre de détention d'Aschaffenburg — accompagnement des détenus sur le chemin de la guérison intérieure et de l'espérance.",
+    },
   ];
 
   const values = [
@@ -119,7 +167,7 @@ export default function Geschichte() {
               : <>Jeder Mensch, der durch unsere Tür geht, trägt eine Geschichte, die Gott kennt. Unser Werk ist es, zuzuhören — <span className="gold-shine not-italic">mit seinen Ohren.</span></>}
           </blockquote>
           <div className="text-sm tracking-[0.3em] uppercase mt-10 text-white/60">
-            — {t(language, "Pfarrer Daniel Müller", "Pastor Daniel Müller", "Pasteur Daniel Müller")}
+            — {t(language, "Pasteur Félix Hélan", "Pastor Félix Hélan", "Pasteur Félix Hélan")}
           </div>
         </div>
       </section>
