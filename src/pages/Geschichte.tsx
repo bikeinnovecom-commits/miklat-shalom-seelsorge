@@ -103,8 +103,8 @@ export default function Geschichte() {
           <p className="text-lg md:text-xl font-light leading-relaxed text-[#1f2420]/75 reveal">
             {t(language,
               "Meine Geschichte beginnt nicht mit einem Plan, sondern mit einem Ruf: Was braucht ein Mensch, um wieder atmen zu können? Vor mehr als zwanzig Jahren habe ich begonnen, auf diese Frage eine Antwort zu suchen. Heute noch antworte ich jeden Tag darauf.",
-              "My story begins not with a plan but with a call: what does a person need to breathe again? More than ten years ago I began to seek an answer to that question. To this day I answer it every day.",
-              "Mon histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de dix ans, j'ai commencé à chercher une réponse à cette question. Aujourd'hui encore, j'y réponds chaque jour."
+              "My story begins not with a plan but with a call: what does a person need to breathe again? More than twenty years ago I began to seek an answer to that question. To this day I answer it every day.",
+              "Mon histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de vingt ans, j'ai commencé à chercher une réponse à cette question. Aujourd'hui encore, j'y réponds chaque jour."
             )}
           </p>
         </div>
