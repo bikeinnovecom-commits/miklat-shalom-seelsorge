@@ -120,10 +120,10 @@ export default function Begleitung() {
             </div>
             <h2 className="font-serif text-4xl md:text-5xl reveal-zoom">
               {language === "en"
-                ? <>A first step — <em className="italic text-[#8a9a82]">face to face or online.</em></>
+                ? <>Accompaniment — <em className="italic text-[#8a9a82]">in person or online.</em></>
                 : language === "fr"
-                ? <>Un premier pas — <em className="italic text-[#8a9a82]">tête à tête ou en ligne.</em></>
-                : <>Erste Begegnung — <em className="italic text-[#8a9a82]">persönlich oder online.</em></>}
+                ? <>Accompagnement — <em className="italic text-[#8a9a82]">en personne ou en ligne.</em></>
+                : <>Begleitung — <em className="italic text-[#8a9a82]">persönlich oder online.</em></>}
             </h2>
           </div>
 

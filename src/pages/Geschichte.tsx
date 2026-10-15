@@ -95,10 +95,10 @@ export default function Geschichte() {
           </div>
           <h2 className="font-serif text-5xl md:text-7xl leading-tight mb-10 reveal-zoom">
             {language === "en"
-              ? <>"I did not grow out of a <em className="italic text-[#8a9a82]">project</em> —<br />I grew out of a <span className="gold-shine">need</span>."</>
+              ? <>"I did not arise as a project — I grew from a <span className="gold-shine">deep inner need</span>."</>
               : language === "fr"
-              ? <>"Je ne suis pas né d'un <em className="italic text-[#8a9a82]">projet</em> —<br />je suis né d'une <span className="gold-shine">nécessité</span>."</>
-              : <>"Ich bin nicht aus einem <em className="italic text-[#8a9a82]">Projekt</em> entstanden —<br />ich bin aus einer <span className="gold-shine">Notwendigkeit</span> gewachsen."</>}
+              ? <>"Je ne suis pas né d'un projet — je suis né d'un <span className="gold-shine">besoin profond</span>."</>
+              : <>"Ich bin nicht als Projekt entstanden – sondern aus einem <span className="gold-shine">tiefen Bedürfnis</span> heraus gewachsen."</>}
           </h2>
           <p className="text-lg md:text-xl font-light leading-relaxed text-[#1f2420]/75 reveal">
             {t(language,

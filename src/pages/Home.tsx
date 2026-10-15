@@ -67,9 +67,9 @@ export default function Home() {
             </p>
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-10 reveal">
               {t(language,
-                '„Jede Seele, die zu mir kommt, trägt eine Geschichte. Meine Berufung ist es, gemeinsam mit ihr einen neuen Weg zu finden — in der Kraft Gottes."',
-                '"Every soul that comes to me carries a story. My calling is to find a new path together — in the strength of God."',
-                '« Chaque âme qui vient à moi porte une histoire. Ma vocation est de trouver ensemble un nouveau chemin — dans la force de Dieu. »'
+                '„Jeder Mensch trägt eine einzigartige Geschichte in sich. Meine Berufung ist es, an Ihrer Seite zu gehen — auf dem Weg der Erneuerung, erleuchtet durch Gottes Wort."',
+                '"Every person carries a unique story within them. My calling is to walk by your side towards renewal, illuminated by the Word of God."',
+                '« Chaque personne porte en elle une histoire unique. Ma vocation est de cheminer à vos côtés vers un renouveau, éclairé par la Parole de Dieu. »'
               )}
             </p>
           </div>

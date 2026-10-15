@@ -175,7 +175,6 @@ export default function Termine() {
                 {[
                   [t(language, "Alle Gespräche unterliegen der Schweigepflicht.", "All conversations are subject to pastoral secrecy.", "Tous les entretiens sont soumis au secret pastoral.")],
                   [t(language, "Sabbatstunden (Fr. 18:00 – Sa. 18:00) sind für Stille reserviert.", "Sabbath hours (Fri 6 pm – Sat 6 pm) are reserved for stillness.", "Les heures du Sabbat (ven. 18h – sam. 18h) sont réservées au silence.")],
-                  [t(language, "Erste Gespräche sind immer kostenlos und unverbindlich.", "Initial conversations are always free and non-binding.", "Les entretiens initiaux sont toujours gratuits et sans engagement.")],
                   [t(language, "Sprachen: Deutsch, Französisch, Englisch.", "Languages: German, French, English.", "Langues : allemand, français, anglais.")],
                 ].map(([item], i) => (
                   <li key={i} className="flex gap-3"><span className="text-[#c9a96a] mt-1">—</span><span>{item}</span></li>
