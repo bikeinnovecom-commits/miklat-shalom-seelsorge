@@ -46,8 +46,8 @@ export default function Begleitung() {
   ];
 
   const steps = [
-    { n: "I",   t_de: "Erstkontakt",      t_en: "First contact",     t_fr: "Premier contact",     d_de: "15-minütiges kostenfreies Gespräch — um sich kennenzulernen, ohne Verpflichtung.", d_en: "15-minute free conversation — to get acquainted, without obligation.", d_fr: "Conversation gratuite de 15 minutes — pour faire connaissance, sans engagement." },
-    { n: "II",  t_de: "Kennenlernen",     t_en: "Getting to know",   t_fr: "Prise de connaissance",d_de: "60 Minuten, um gemeinsam zu verstehen, was Ihre Seele bewegt.", d_en: "60 minutes to understand together what moves your soul.", d_fr: "60 minutes pour comprendre ensemble ce qui touche votre âme." },
+    { n: "I",   t_de: "Gesprächsangebot", t_en: "Conversation offer", t_fr: "Gesprächsangebot",     d_de: "Ein unverbindliches erstes Gespräch — um sich kennenzulernen.", d_en: "A non-binding first conversation — to get acquainted.", d_fr: "Un premier entretien sans engagement — pour faire connaissance." },
+    { n: "II",  t_de: "Kennenlernen",     t_en: "Getting to know",   t_fr: "Prise de connaissance", d_de: "Gemeinsam verstehen, was Ihre Seele bewegt.", d_en: "Understanding together what moves your soul.", d_fr: "Comprendre ensemble ce qui touche votre âme." },
     { n: "III", t_de: "Seelsorgeweg",     t_en: "Pastoral path",     t_fr: "Chemin pastoral",      d_de: "Gemeinsam wählen wir den Weg, der zu Ihrer Situation und Ihrem Glauben passt.", d_en: "Together we choose the path that fits your situation and faith.", d_fr: "Ensemble, nous choisissons le chemin qui correspond à votre situation et à votre foi." },
     { n: "IV",  t_de: "Nachbegleitung",   t_en: "Follow-up care",    t_fr: "Suivi pastoral",       d_de: "Regelmäßige Begegnungen in Ihrem Rhythmus — mit Sabbatpausen, wenn nötig.", d_en: "Regular meetings at your own rhythm — with Sabbath rest when needed.", d_fr: "Rencontres régulières à votre rythme — avec repos du Sabbat si nécessaire." },
   ];
@@ -72,9 +72,9 @@ export default function Begleitung() {
           </h2>
           <p className="text-xl md:text-2xl text-[#1f2420]/75 font-light leading-relaxed reveal">
             {t(language,
-              "Ich glaube: Heilung geschieht, wenn ein Mensch sich vollständig angenommen fühlt — von Gott und von seinem Gegenüber. Jede Form ist nur ein Werkzeug. Das Wesentliche ist die Begegnung im Licht der Schrift.",
-              "I believe healing happens when a person feels fully accepted — by God and by the one before them. Each form is only a tool. What matters is the encounter in the light of Scripture.",
-              "Je crois que la guérison arrive quand une personne se sent pleinement acceptée — par Dieu et par son interlocuteur. Chaque forme n'est qu'un outil. L'essentiel est la rencontre à la lumière de l'Écriture."
+              "Ich glaube: Heilung geschieht, wenn du dich vollständig angenommen fühlst — von Gott und von deinem Gegenüber. Jedes Werkzeug ist nur ein Mittel zum Zweck. Das Wesentliche ist die Begegnung im Licht der Schrift.",
+              "I believe healing happens when you feel fully accepted — by God and by the one before you. Every tool is just a means to an end. What matters is the encounter in the light of Scripture.",
+              "Je crois que la guérison arrive quand tu te sens pleinement accepté(e) — par Dieu et par ton interlocuteur. Chaque outil n'est qu'un moyen. L'essentiel est la rencontre à la lumière de l'Écriture."
             )}
           </p>
         </div>
@@ -131,39 +131,39 @@ export default function Begleitung() {
             {[
               {
                 icon: "🏛",
-                t_de: "Vor Ort · Aschaffenburg",
-                t_en: "In person · Aschaffenburg",
-                t_fr: "Vor Ort · Aschaffenburg",
-                d_de: "Adventistengemeinde Aschaffenburg — persönliche Begegnungen in einem geschützten, vertrauten Raum.",
-                d_en: "Adventist Church Aschaffenburg — personal meetings in a safe and familiar setting.",
-                d_fr: "Église adventiste d'Aschaffenburg — rencontres personnelles dans un cadre protégé et familier.",
+                t_de: "Vor Ort · Adventgemeinde Aschaffenburg",
+                t_en: "In person · Adventist Church Aschaffenburg",
+                t_fr: "Vor Ort · Adventgemeinde Aschaffenburg",
+                d_de: "Persönliche Begegnungen in einem geschützten, vertrauten Raum.",
+                d_en: "Personal meetings in a safe and familiar setting.",
+                d_fr: "Rencontres personnelles dans un cadre protégé et familier.",
               },
               {
                 icon: "🏛",
-                t_de: "Vor Ort · Wertheim",
-                t_en: "In person · Wertheim",
-                t_fr: "Vor Ort · Wertheim",
-                d_de: "Adventistengemeinde Wertheim — Begleitung in ruhiger Atmosphäre, nahe bei Ihnen.",
-                d_en: "Adventist Church Wertheim — accompaniment in a calm atmosphere, close to you.",
-                d_fr: "Église adventiste de Wertheim — accompagnement dans une atmosphère paisible, près de vous.",
+                t_de: "Vor Ort · Adventgemeinde Wertheim",
+                t_en: "In person · Adventist Church Wertheim",
+                t_fr: "Vor Ort · Adventgemeinde Wertheim",
+                d_de: "Begleitung in ruhiger Atmosphäre, nahe bei Ihnen.",
+                d_en: "Accompaniment in a calm atmosphere, close to you.",
+                d_fr: "Accompagnement dans une atmosphère paisible, près de vous.",
               },
               {
                 icon: "🏠",
                 t_de: "Bei Ihnen zu Hause",
                 t_en: "At your home",
                 t_fr: "À votre domicile",
-                d_de: "Begleitung bei Ihnen zu Hause — auf Ihren Wunsch und in Ihrer vertrauten Umgebung.",
-                d_en: "Accompaniment at your home — at your request and in your familiar surroundings.",
-                d_fr: "Accompagnement à domicile — selon votre souhait et dans votre environnement familier.",
+                d_de: "Begleitung bei Ihnen zu Hause und in Ihrer vertrauten Umgebung.",
+                d_en: "Accompaniment at your home and in your familiar surroundings.",
+                d_fr: "Accompagnement à votre domicile et dans votre environnement familier.",
               },
               {
                 icon: "💻",
                 t_de: "Online",
                 t_en: "Online",
                 t_fr: "En ligne",
-                d_de: "Seelsorge per Videokonferenz — ortsunabhängig, diskret und genauso persönlich.",
-                d_en: "Pastoral care via video conference — location-independent, discreet, and just as personal.",
-                d_fr: "Accompagnement par visioconférence — indépendant du lieu, discret et tout aussi personnel.",
+                d_de: "Seelsorge per Online Meeting — ortsunabhängig, diskret und genauso persönlich.",
+                d_en: "Pastoral care via Online Meeting — location-independent, discreet, and just as personal.",
+                d_fr: "Accompagnement par Online Meeting — indépendant du lieu, discret et tout aussi personnel.",
               },
             ].map((loc, i) => (
               <div key={i} className="bg-[#efe9df] p-8 reveal" style={{ animationDelay: `${i * 0.1}s` }}>
@@ -185,10 +185,10 @@ export default function Begleitung() {
             </div>
             <h2 className="font-serif text-5xl md:text-6xl reveal-zoom">
               {language === "en"
-                ? <>Four <em className="italic text-[#8a9a82]">steps</em> to the first encounter</>
+                ? <>Four <em className="italic text-[#8a9a82]">steps</em> of accompaniment</>
                 : language === "fr"
-                ? <>Quatre <em className="italic text-[#8a9a82]">étapes</em> vers la première rencontre</>
-                : <>Vier <em className="italic text-[#8a9a82]">Schritte</em> zur ersten Begegnung</>}
+                ? <>Quatre <em className="italic text-[#8a9a82]">étapes</em> de l'accompagnement</>
+                : <>Vier <em className="italic text-[#8a9a82]">Schritte</em> der Begleitung</>}
             </h2>
           </div>
 

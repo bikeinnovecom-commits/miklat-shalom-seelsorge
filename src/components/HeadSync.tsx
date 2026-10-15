@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const titles: Record<string, string> = {
-  "/": "Miklat Shalom — Seelsorge & Geistliche Begleitung",
+  "/": "Miklat Shalom — Geistliche Begleitung & Ehebegleitung",
   "/begleitung": "Unsere Begleitung — Miklat Shalom",
   "/geschichte": "Unsere Geschichte — Miklat Shalom",
   "/termine": "Terminkalender — Miklat Shalom",

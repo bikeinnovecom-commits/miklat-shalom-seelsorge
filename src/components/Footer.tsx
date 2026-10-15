@@ -44,9 +44,9 @@ export default function Footer() {
             </div>
             <p className="text-white/60 max-w-md font-light leading-relaxed">
               {t(language,
-                "Miklat Shalom — ein Heiligtum des Friedens. Ich begleite Menschen in Krisen, Übergängen und auf der Suche nach geistlicher Tiefe, getragen von biblischer Weisheit und herzlicher adventistischer Nächstenliebe.",
-                "Miklat Shalom — a sanctuary of peace. I walk alongside people through crises, transitions, and spiritual searching, rooted in biblical wisdom and heartfelt Adventist love for one's neighbour.",
-                "Miklat Shalom — un sanctuaire de paix. J'accompagne les personnes dans les crises, les transitions et la quête de profondeur spirituelle, porté par la sagesse biblique et l'amour du prochain adventiste."
+                "Miklat Shalom — Eine Oase des Friedens. Getragen von biblischer Weisheit und herzlicher adventistischer Nächstenliebe begleite ich Menschen durch Krisen, Lebensübergänge und auf der Suche nach spiritueller Tiefe.",
+                "Miklat Shalom — an oasis of peace. Rooted in biblical wisdom and heartfelt Adventist love of neighbour, I accompany people through crises, life transitions and in their search for spiritual depth.",
+                "Miklat Shalom — une oasis de paix. Porté par la sagesse biblique et l'amour du prochain adventiste, j'accompagne les personnes à travers les crises, les transitions de vie et dans leur quête de profondeur spirituelle."
               )}
             </p>
           </div>

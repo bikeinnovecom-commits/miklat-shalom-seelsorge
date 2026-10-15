@@ -85,10 +85,10 @@ export default function Home() {
             </div>
             <h2 className="font-serif text-5xl md:text-7xl leading-tight max-w-4xl mx-auto reveal-zoom">
               {language === "en"
-                ? <>Three pillars on which every <em className="italic text-[#8a9a82]">encounter</em> rests.</>
+                ? <>The three pillars at the heart of every <em className="italic text-[#8a9a82]">encounter</em>.</>
                 : language === "fr"
-                ? <>Trois piliers sur lesquels chaque <em className="italic text-[#8a9a82]">rencontre</em> repose.</>
-                : <>Drei Säulen, auf denen jede <em className="italic text-[#8a9a82]">Begegnung</em> ruht.</>}
+                ? <>Les trois piliers au cœur de chaque <em className="italic text-[#8a9a82]">rencontre</em>.</>
+                : <>Die drei Säulen im Herzen jeder <em className="italic text-[#8a9a82]">Begegnung</em>.</>}
             </h2>
           </div>
 
@@ -97,23 +97,23 @@ export default function Home() {
               {
                 k: "01",
                 t_de: "Gebet",        t_en: "Prayer",     t_fr: "Prière",
-                d_de: "Das Gebet ist mein erster Schritt — bevor ich spreche, höre ich auf Gott.",
-                d_en: "Prayer is my first step — before I speak, I listen to God.",
-                d_fr: "La prière est mon premier pas — avant de parler, j'écoute Dieu.",
+                d_de: "Das Gebet ist mein erster Schritt: Bevor ich das Gespräch suche, höre ich auf Gott.",
+                d_en: "Prayer is my first step: before I seek the conversation, I listen to God.",
+                d_fr: "La prière est mon premier pas : avant de chercher la conversation, j'écoute Dieu.",
               },
               {
                 k: "02",
                 t_de: "Gottes Wort",  t_en: "God's Word",  t_fr: "La Parole de Dieu",
-                d_de: "Die Heiligen Schriften als lebendige Quelle: Orientierung, Trost und Kraft für jeden Lebensweg.",
-                d_en: "The Holy Scriptures as a living source: guidance, comfort, and strength for every life's path.",
-                d_fr: "Les Saintes Écritures comme source vivante : orientation, réconfort et force pour chaque chemin de vie.",
+                d_de: "Die Heilige Schrift als lebendige Quelle: Sie schenkt Orientierung, Trost und Kraft auf jedem Lebensweg.",
+                d_en: "Holy Scripture as a living source: it gives guidance, comfort, and strength on every path of life.",
+                d_fr: "La Sainte Écriture comme source vivante : elle apporte orientation, réconfort et force sur chaque chemin de vie.",
               },
               {
                 k: "03",
-                t_de: "Gemeinschaft", t_en: "Community",   t_fr: "Communauté",
-                d_de: "Kein Mensch ist zur Einsamkeit bestimmt. Ich bin da, damit Sie leichter tragen können.",
-                d_en: "No one is destined for loneliness. I am here so you can carry things more lightly.",
-                d_fr: "Personne n'est destiné à la solitude. Je suis là pour que vous portiez plus légèrement.",
+                t_de: "Die Gegenwart", t_en: "The Presence", t_fr: "La Présence",
+                d_de: "Niemand ist dafür geschaffen, allein zu gehen. Ich stehe Ihnen zur Seite, um Ihre Last zu erleichtern.",
+                d_en: "No one is made to walk alone. I stand by your side to help you carry your burden.",
+                d_fr: "Personne n'est fait pour aller seul. Je suis à vos côtés pour vous aider à porter votre fardeau.",
               },
             ] as const).map((p, i) => (
               <div

@@ -85,7 +85,7 @@ export default function Geschichte() {
   return (
     <main className="page-enter">
       <HeroCarousel slides={slides} />
-      <LifestyleRail title={t(language, "Gesichter einer Geschichte, die noch geschrieben wird.", "Faces of a story still being written.", "Visages d'une histoire qui s'écrit encore.")} />
+      <LifestyleRail title={t(language, "Über die Wunden von gestern hinaus schreibt sich deine Geschichte weiter.", "Beyond yesterday's wounds, your story is still being written.", "Au-delà des blessures d'hier, ton histoire continue de s'écrire.")} />
 
       {/* BRIEF */}
       <section className="py-32 bg-[#f8f5ef]">
@@ -95,16 +95,16 @@ export default function Geschichte() {
           </div>
           <h2 className="font-serif text-5xl md:text-7xl leading-tight mb-10 reveal-zoom">
             {language === "en"
-              ? <>"I was not <em className="italic text-[#8a9a82]">founded</em> —<br />I <span className="gold-shine">grew</span>."</>
+              ? <>"I did not grow out of a <em className="italic text-[#8a9a82]">project</em> —<br />I grew out of a <span className="gold-shine">need</span>."</>
               : language === "fr"
-              ? <>"Je n'ai pas été <em className="italic text-[#8a9a82]">fondé</em> —<br />j'ai <span className="gold-shine">grandi</span>."</>
-              : <>"Ich wurde <em className="italic text-[#8a9a82]">nicht gegründet</em> —<br />ich bin <span className="gold-shine">gewachsen</span>."</>}
+              ? <>"Je ne suis pas né d'un <em className="italic text-[#8a9a82]">projet</em> —<br />je suis né d'une <span className="gold-shine">nécessité</span>."</>
+              : <>"Ich bin nicht aus einem <em className="italic text-[#8a9a82]">Projekt</em> entstanden —<br />ich bin aus einer <span className="gold-shine">Notwendigkeit</span> gewachsen."</>}
           </h2>
           <p className="text-lg md:text-xl font-light leading-relaxed text-[#1f2420]/75 reveal">
             {t(language,
-              "Meine Geschichte beginnt nicht mit einem Plan, sondern mit einem Ruf: Was braucht ein Mensch, um wieder aufatmen zu können? Vor über zehn Jahren habe ich angefangen, auf diese Frage zu antworten. Ich antworte immer noch.",
-              "My story begins not with a plan but with a call: what does a person need to breathe freely again? More than ten years ago I began to answer that question. I am still answering it.",
-              "Mon histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de dix ans, j'ai commencé à répondre à cette question. J'y réponds encore."
+              "Meine Geschichte beginnt nicht mit einem Plan, sondern mit einem Ruf: Was braucht ein Mensch, um wieder atmen zu können? Vor mehr als zehn Jahren habe ich begonnen, auf diese Frage eine Antwort zu suchen. Heute noch antworte ich jeden Tag darauf.",
+              "My story begins not with a plan but with a call: what does a person need to breathe again? More than ten years ago I began to seek an answer to that question. To this day I answer it every day.",
+              "Mon histoire ne commence pas par un plan, mais par un appel : de quoi a besoin une personne pour respirer à nouveau ? Il y a plus de dix ans, j'ai commencé à chercher une réponse à cette question. Aujourd'hui encore, j'y réponds chaque jour."
             )}
           </p>
         </div>
@@ -114,6 +114,9 @@ export default function Geschichte() {
       <section className="py-32 bg-[#efe9df]">
         <div className="max-w-5xl mx-auto px-6">
           <div className="mb-16 text-center">
+            <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-4 reveal">
+              Master in Counseling
+            </div>
             <h2 className="font-serif text-5xl md:text-6xl reveal-zoom">
               {language === "en" ? <>My <em className="italic text-[#8a9a82]">Chronicle</em></> : language === "fr" ? <>Ma <em className="italic text-[#8a9a82]">Chronique</em></> : <>Meine <em className="italic text-[#8a9a82]">Chronik</em></>}
             </h2>
