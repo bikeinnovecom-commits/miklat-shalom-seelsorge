@@ -57,10 +57,10 @@ export default function Termine() {
             </div>
             <h2 className="font-serif text-4xl md:text-6xl mb-12">
               {language === "en"
-                ? <>Choose your <em className="italic text-[#8a9a82]">date</em>.</>
+                ? <>Book your <em className="italic text-[#8a9a82]">appointment</em> here.</>
                 : language === "fr"
-                ? <>Choisissez votre <em className="italic text-[#8a9a82]">date</em>.</>
-                : <>Wählen Sie Ihren <em className="italic text-[#8a9a82]">Termin</em>.</>}
+                ? <>Réservez votre <em className="italic text-[#8a9a82]">rendez-vous</em> ici.</>
+                : <>Buchen Sie hier Ihren <em className="italic text-[#8a9a82]">Termin</em>.</>}
             </h2>
 
             <div className="bg-white border border-[#c9a96a]/20 p-8">
@@ -149,10 +149,10 @@ export default function Termine() {
               <div className="mt-8 p-6 bg-[#3a4a3f]/10 border-l-4 border-[#c9a96a] reveal">
                 <p className="font-serif text-lg text-[#3a4a3f]">
                   {language === "en"
-                    ? <>✓ Request for <strong>{MONTHS[language][month]} {selected}, {year}</strong> at <strong>{selectedTime}</strong> sent. We will reply within 24 hours.</>
+                    ? <>✓ Request for <strong>{MONTHS[language][month]} {selected}, {year}</strong> at <strong>{selectedTime}</strong> sent. I will reply within 24 hours.</>
                     : language === "fr"
-                    ? <>✓ Demande pour le <strong>{selected} {MONTHS[language][month]} {year}</strong> à <strong>{selectedTime}</strong> envoyée. Nous vous répondrons dans les 24 heures.</>
-                    : <>✓ Anfrage für den <strong>{selected}. {MONTHS[language][month]} {year}</strong> um <strong>{selectedTime}</strong> gesendet. Wir melden uns innerhalb von 24 Stunden.</>}
+                    ? <>✓ Demande pour le <strong>{selected} {MONTHS[language][month]} {year}</strong> à <strong>{selectedTime}</strong> envoyée. Je vous répondrai dans les 24 heures.</>
+                    : <>✓ Anfrage für den <strong>{selected}. {MONTHS[language][month]} {year}</strong> um <strong>{selectedTime}</strong> gesendet. Ich melde mich innerhalb von 24 Stunden.</>}
                 </p>
               </div>
             )}

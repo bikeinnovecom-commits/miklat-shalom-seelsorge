@@ -78,7 +78,7 @@ export default function Geschichte() {
   const values = [
     { t_de: "Biblische Fundierung",  t_en: "Biblical Foundation",    t_fr: "Fondement biblique",    d_de: "Alles, was ich tue, wurzelt im Wort Gottes — meinem unveränderlichen Anker.", d_en: "Everything I do is rooted in God's Word — my unchanging anchor.", d_fr: "Tout ce que je fais est enraciné dans la Parole de Dieu — mon ancre immuable." },
     { t_de: "Geistliche Tiefe",      t_en: "Spiritual Depth",        t_fr: "Profondeur spirituelle", d_de: "Seelsorge ist mehr als Gespräch — sie ist Begegnung im Geist.", d_en: "Pastoral care is more than conversation — it is encounter in the Spirit.", d_fr: "La cure d'âme est plus qu'une conversation — c'est une rencontre dans l'Esprit." },
-    { t_de: "Nächstenliebe",         t_en: "Love of Neighbour",      t_fr: "Amour du prochain",      d_de: "Das höchste Gebot ist mein Maßstab: Liebe Gott und deinen Nächsten.", d_en: "The greatest commandment is my standard: Love God and your neighbour.", d_fr: "Le plus grand commandement est ma mesure : Aimer Dieu et son prochain." },
+    { t_de: "Nächstenliebe",         t_en: "Love of Neighbour",      t_fr: "Amour du prochain",      d_de: "Das höchste Gebot als Fundament: Liebe Gott und deinen Nächsten.", d_en: "The greatest commandment as a foundation: Love God and your neighbour.", d_fr: "Le plus grand commandement comme fondement : Aimer Dieu et son prochain." },
     { t_de: "Verschwiegenheit",      t_en: "Pastoral Secrecy",       t_fr: "Secret pastoral",        d_de: "Alles Geteilte bleibt im Schutz der Seelsorge-Beziehung.", d_en: "Everything shared remains protected within the pastoral relationship.", d_fr: "Tout ce qui est partagé reste protégé dans le cadre de la relation pastorale." },
   ];
 

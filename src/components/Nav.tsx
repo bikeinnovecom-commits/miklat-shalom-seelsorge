@@ -75,7 +75,7 @@ export default function Nav() {
                 Miklat Shalom
               </div>
               <div className={`text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-[#8a9a82]" : "text-white/70"}`}>
-                {t(language, "Geistliche Begleitung & Ehebegleitung", "Spiritual Accompaniment & Marriage Support", "Accompagnement spirituel & conjugal")}
+                {t(language, "Seelsorge & Begleitung", "Pastoral Care & Accompaniment", "Cure d'âme & Accompagnement")}
               </div>
             </div>
           </Link>

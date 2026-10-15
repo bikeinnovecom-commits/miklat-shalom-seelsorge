@@ -42,10 +42,10 @@ export default function Kontakt() {
             </div>
             <h2 className="font-serif text-4xl md:text-6xl leading-tight mb-12">
               {language === "en"
-                ? <>Write to <em className="italic text-[#8a9a82]">us</em>.</>
+                ? <>I look forward to <em className="italic text-[#8a9a82]">your message</em>.</>
                 : language === "fr"
-                ? <>Écrivez-<em className="italic text-[#8a9a82]">nous</em>.</>
-                : <>Schreiben Sie <em className="italic text-[#8a9a82]">uns</em>.</>}
+                ? <>Je me réjouis de <em className="italic text-[#8a9a82]">votre message</em>.</>
+                : <>Ich freue mich auf <em className="italic text-[#8a9a82]">Ihre Nachricht</em>.</>}
             </h2>
 
             {sent ? (
@@ -143,7 +143,7 @@ export default function Kontakt() {
                     value={form.nachricht}
                     onChange={e => change("nachricht", e.target.value)}
                     className="w-full border border-[#c9a96a]/40 bg-transparent px-4 py-3 focus:outline-none focus:border-[#c9a96a] transition-colors resize-none"
-                    placeholder={t(language, "Erzählen Sie uns, was Sie bewegt…", "Tell us what moves you…", "Dites-nous ce qui vous touche…")}
+                    placeholder={t(language, "Erzählen Sie mir, was Sie bewegt…", "Tell me what moves you…", "Dites-moi ce qui vous touche…")}
                   />
                 </div>
 
@@ -221,10 +221,10 @@ export default function Kontakt() {
           <div className="font-serif text-6xl text-[#c9a96a] mb-6">"</div>
           <blockquote className="font-serif text-3xl md:text-4xl italic leading-tight reveal-zoom">
             {language === "en"
-              ? <>Your first step towards us is an act of courage. <span className="gold-shine not-italic">We receive it with dignity.</span></>
+              ? <>Your first step towards me is an act of courage. <span className="gold-shine not-italic">I receive it with dignity.</span></>
               : language === "fr"
-              ? <>Votre premier pas vers nous est un acte de courage. <span className="gold-shine not-italic">Nous l'accueillons avec dignité.</span></>
-              : <>Ihr erster Schritt zu uns ist ein Akt des Mutes. <span className="gold-shine not-italic">Wir empfangen ihn mit Würde.</span></>}
+              ? <>Votre premier pas vers moi est un acte de courage. <span className="gold-shine not-italic">Je l'accueille avec dignité.</span></>
+              : <>Ihr erster Schritt zu mir ist ein Akt des Mutes. <span className="gold-shine not-italic">Ich empfange ihn mit Würde.</span></>}
           </blockquote>
         </div>
       </section>
