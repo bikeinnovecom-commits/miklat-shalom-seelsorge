@@ -25,8 +25,8 @@ export default function Geschichte() {
       t_en: "Accompaniment in Crisis",
       t_fr: "Accompagnement des personnes en détresse",
       d_de: "Begleitung von Personen in emotionaler und spiritueller Not. Einzel- und Eheberatung. Bewältigung und Lösung von Ehekonflikten.",
-      d_en: "Accompaniment of people in emotional and spiritual distress. Individual and marital counselling. Management and resolution of marital conflicts.",
-      d_fr: "Accompagnement des personnes en situation de détresse émotionnelle et spirituelle. Entretiens et conseils conjugaux. Gestion et résolution des conflits conjugaux.",
+      d_en: "Accompaniment of people in emotional and spiritual distress. Individual and marital counselling. Mediation and resolution of marital conflicts.",
+      d_fr: "Accompagnement des personnes en situation de détresse émotionnelle et spirituelle. Entretiens et conseils conjugaux. Médiation et résolution des conflits conjugaux.",
     },
     {
       y: "2016",
@@ -43,8 +43,8 @@ export default function Geschichte() {
       t_en: "Ministry in Austria & Germany",
       t_fr: "Accompagnement en Autriche et Allemagne",
       d_de: "Seelsorgerliche Begleitung von Menschen in emotionaler und spiritueller Not in Österreich und Deutschland.",
-      d_en: "Pastoral accompaniment of people with emotional and spiritual problems in Austria and Germany.",
-      d_fr: "Accompagnement des personnes en détresse et problèmes émotionnels et spirituels (Autriche et Allemagne).",
+      d_en: "Pastoral accompaniment of people in emotional and spiritual distress in Austria and Germany.",
+      d_fr: "Accompagnement des personnes en détresse émotionnelle et spirituelle en Autriche et en Allemagne.",
     },
     {
       y: "PhD",
@@ -61,8 +61,8 @@ export default function Geschichte() {
       t_en: "Family Conflict Seminars",
       t_fr: "Séminaires sur les conflits familiaux",
       d_de: "Leitung von Seminaren zur Bewältigung und Lösung familiärer Konflikte — für Familien, Gemeinden und Beratungsfachkräfte.",
-      d_en: "Leadership of seminars on the management and resolution of family conflicts — for families, congregations and counselling professionals.",
-      d_fr: "Séminaire sur la gestion et résolution des conflits familiaux — pour les familles, les communautés et les professionnels de l'accompagnement.",
+      d_en: "Seminars on the resolution and mediation of family conflicts — for families, congregations and counselling professionals.",
+      d_fr: "Séminaires sur la gestion et la résolution des conflits familiaux — pour les familles, les communautés et les professionnels de l'accompagnement.",
     },
     {
       y: "2024–2026",

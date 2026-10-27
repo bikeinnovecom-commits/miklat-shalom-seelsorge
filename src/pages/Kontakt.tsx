@@ -175,7 +175,7 @@ export default function Kontakt() {
           {/* Info block */}
           <div className="reveal-right space-y-8">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5">
-              — {t(language, "Besuchen Sie mich", "Visit me", "Me rendre visite")}
+              — {t(language, "Besuchen Sie mich", "Visit me", "Venez me rencontrer")}
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight">
               {t(language, "Im Herzen von", "In the heart of", "Au cœur de")}{" "}

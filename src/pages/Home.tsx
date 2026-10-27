@@ -61,7 +61,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-[#1f2420]/75 font-light leading-relaxed mb-6 reveal">
               {t(language,
                 "Ausgebildeter Seelsorger und Begleiter mit einem Master in Counseling. Mein Dienst führte mich von der Karibik über Österreich bis nach Deutschland — immer nahe bei denen, die Begleitung suchen.",
-                "A trained pastoral counsellor and accompanist with a Master's in Counseling. My ministry took me from the Caribbean through Austria to Germany — always close to those who seek accompaniment.",
+                "A trained pastoral counsellor and companion with a Master's in Counseling. My ministry took me from the Caribbean through Austria to Germany — always close to those who seek accompaniment.",
                 "Accompagnateur pastoral formé, titulaire d'un Master en Counseling. Mon ministère m'a conduit des Antilles à l'Autriche jusqu'en Allemagne — toujours proche de ceux qui cherchent un accompagnement."
               )}
             </p>
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
           <div className="text-center mb-20">
             <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-5 reveal">
-              — {t(language, "Mein Weg", "My Way", "Mon chemin")}
+              — {t(language, "Mein Weg", "My Path", "Mon chemin")}
             </div>
             <h2 className="font-serif text-5xl md:text-7xl leading-tight max-w-4xl mx-auto reveal-zoom">
               {language === "en"
