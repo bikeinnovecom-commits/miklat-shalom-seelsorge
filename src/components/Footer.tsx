@@ -66,9 +66,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 text-xs tracking-widest uppercase text-white/40">
           <div>{t(language, "© 2026 Miklat Shalom — Alle Rechte vorbehalten", "© 2026 Miklat Shalom · All rights reserved", "© 2026 Miklat Shalom · Tous droits réservés")}</div>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="link-ul">{t(language, "Impressum", "Legal notice", "Mentions légales")}</a>
-            <a href="#" className="link-ul">{t(language, "Datenschutz", "Privacy", "Confidentialité")}</a>
-            <a href="#" className="link-ul">{t(language, "Schweigepflicht", "Pastoral secrecy", "Secret pastoral")}</a>
+            <Link to="/impressum"   className="link-ul">{t(language, "Impressum", "Legal notice", "Mentions légales")}</Link>
+            <Link to="/datenschutz" className="link-ul">{t(language, "Datenschutz", "Privacy", "Confidentialité")}</Link>
           </div>
         </div>
       </div>

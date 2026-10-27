@@ -8,6 +8,8 @@ import Begleitung from "./pages/Begleitung";
 import Geschichte from "./pages/Geschichte";
 import Termine from "./pages/Termine";
 import Kontakt from "./pages/Kontakt";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 
 /** Remonte instantanément en haut à chaque changement de route */
 function ScrollToTop() {
@@ -32,7 +34,9 @@ export default function App() {
         <Route path="/begleitung" element={<Begleitung key={pathname} />} />
         <Route path="/geschichte" element={<Geschichte key={pathname} />} />
         <Route path="/termine"    element={<Termine    key={pathname} />} />
-        <Route path="/kontakt"    element={<Kontakt    key={pathname} />} />
+        <Route path="/kontakt"     element={<Kontakt     key={pathname} />} />
+        <Route path="/impressum"  element={<Impressum  key={pathname} />} />
+        <Route path="/datenschutz" element={<Datenschutz key={pathname} />} />
         <Route path="*"           element={<Home       key={pathname} />} />
       </Routes>
       <Footer />
