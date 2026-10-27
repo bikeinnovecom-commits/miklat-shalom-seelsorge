@@ -170,7 +170,6 @@ export default function Geschichte() {
       {/* ZITAT */}
       <section className="py-32 bg-[#3a4a3f] text-[#f8f5ef]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="font-serif text-6xl text-[#c9a96a] mb-6">"</div>
           <blockquote className="font-serif text-3xl md:text-5xl italic leading-tight reveal-zoom">
             {language === "en"
               ? <>Every person who comes to me carries a story that God knows. My calling is to listen — and to give each person <span className="gold-shine not-italic">my full attention.</span></>
@@ -178,8 +177,7 @@ export default function Geschichte() {
               ? <>Chaque personne qui vient me voir porte une histoire que Dieu connaît. Ma mission est de prêter une <span className="gold-shine not-italic">oreille attentive.</span></>
               : <>Jeder Mensch, der zu mir kommt, trägt eine Geschichte, die Gott kennt. Meine Berufung ist es, hinzuhören — und jedem Menschen <span className="gold-shine not-italic">meine volle Aufmerksamkeit zu schenken.</span></>}
           </blockquote>
-          <div className="font-serif text-6xl text-[#c9a96a] mt-6">"</div>
-          <div className="text-sm tracking-[0.3em] uppercase mt-6 text-white/60">
+          <div className="text-sm tracking-[0.3em] uppercase mt-10 text-white/60">
             — {t(language, "Pasteur Félix Hélan", "Pastor Félix Hélan", "Pasteur Félix Hélan")}
           </div>
         </div>

@@ -218,7 +218,6 @@ export default function Kontakt() {
       {/* CLOSING */}
       <section className="py-32 bg-[#3a4a3f] text-[#f8f5ef] text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="font-serif text-6xl text-[#c9a96a] mb-6">"</div>
           <blockquote className="font-serif text-3xl md:text-4xl italic leading-tight reveal-zoom">
             {language === "en"
               ? <>Your first step towards me is an act of courage. <span className="gold-shine not-italic">I receive it with dignity.</span></>
@@ -226,7 +225,6 @@ export default function Kontakt() {
               ? <>Votre premier pas vers moi est un acte de courage. <span className="gold-shine not-italic">Je l'accueille avec dignité.</span></>
               : <>Ihr erster Schritt zu mir ist ein Akt des Mutes. <span className="gold-shine not-italic">Ich empfange ihn mit Würde.</span></>}
           </blockquote>
-          <div className="font-serif text-6xl text-[#c9a96a] mt-6">"</div>
         </div>
       </section>
     </main>
