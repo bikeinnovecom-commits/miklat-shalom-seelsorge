@@ -186,7 +186,8 @@ export default function Home() {
               ? <>Il guérit ceux qui ont le cœur brisé <span className="gold-shine not-italic"> et il panse leurs plaies.</span></>
               : <>Er heilt, die zerbrochenen Herzens sind, <span className="gold-shine not-italic"> und verbindet ihre Wunden.</span></>}
           </blockquote>
-          <div className="text-sm tracking-[0.3em] uppercase mt-10 text-white/60 reveal">
+          <div className="font-serif text-7xl text-[#c9a96a] mt-8">"</div>
+          <div className="text-sm tracking-[0.3em] uppercase mt-4 text-white/60 reveal">
             — {t(language, "Psalm 147, 3", "Psalm 147:3", "Psaume 147:3")}
           </div>
           <Link to="/termine" className="inline-block mt-14 px-10 py-5 bg-[#c9a96a] text-[#1f2420] text-xs tracking-[0.3em] uppercase hover:bg-white transition-all duration-500">

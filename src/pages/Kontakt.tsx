@@ -226,6 +226,7 @@ export default function Kontakt() {
               ? <>Votre premier pas vers moi est un acte de courage. <span className="gold-shine not-italic">Je l'accueille avec dignité.</span></>
               : <>Ihr erster Schritt zu mir ist ein Akt des Mutes. <span className="gold-shine not-italic">Ich empfange ihn mit Würde.</span></>}
           </blockquote>
+          <div className="font-serif text-6xl text-[#c9a96a] mt-6">"</div>
         </div>
       </section>
     </main>
