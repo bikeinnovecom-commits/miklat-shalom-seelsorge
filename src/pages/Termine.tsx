@@ -31,6 +31,8 @@ export default function Termine() {
   const [selected, setSelected] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [confirmed, setConfirmed] = useState(false);
+  const [patient, setPatient] = useState({ vorname: "", nachname: "", email: "", telefon: "" });
+  const setP = (k: string, v: string) => setPatient(p => ({ ...p, [k]: v }));
 
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const firstDay    = getFirstDayOfMonth(year, month);
@@ -135,24 +137,89 @@ export default function Termine() {
               </div>
             )}
 
-            {/* Confirm */}
+            {/* Patient registration form — appears after date + time are chosen */}
             {selected && selectedTime && !confirmed && (
-              <button
-                onClick={() => setConfirmed(true)}
-                className="mt-8 px-8 py-4 bg-[#c9a96a] text-[#1f2420] text-xs tracking-[0.3em] uppercase hover:bg-[#3a4a3f] hover:text-white transition-all duration-500"
+              <form
+                className="mt-8 space-y-4 reveal"
+                onSubmit={e => { e.preventDefault(); setConfirmed(true); }}
               >
-                {t(language, "Termin verbindlich anfragen", "Confirm appointment request", "Confirmer la demande de rendez-vous")}
-              </button>
+                <div className="text-xs tracking-[0.4em] uppercase text-[#c9a96a] mb-2">
+                  — {t(language, "Ihre Angaben", "Your details", "Vos coordonnées")}
+                </div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs tracking-[0.2em] uppercase text-[#1f2420]/60 mb-1">
+                      {t(language, "Vorname", "First name", "Prénom")} *
+                    </label>
+                    <input
+                      required
+                      value={patient.vorname}
+                      onChange={e => setP("vorname", e.target.value)}
+                      placeholder={t(language, "Ihr Vorname", "Your first name", "Votre prénom")}
+                      className="w-full border border-[#c9a96a]/40 bg-transparent px-3 py-2 text-sm focus:outline-none focus:border-[#c9a96a] transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs tracking-[0.2em] uppercase text-[#1f2420]/60 mb-1">
+                      {t(language, "Nachname", "Last name", "Nom")} *
+                    </label>
+                    <input
+                      required
+                      value={patient.nachname}
+                      onChange={e => setP("nachname", e.target.value)}
+                      placeholder={t(language, "Ihr Nachname", "Your last name", "Votre nom")}
+                      className="w-full border border-[#c9a96a]/40 bg-transparent px-3 py-2 text-sm focus:outline-none focus:border-[#c9a96a] transition-colors"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-xs tracking-[0.2em] uppercase text-[#1f2420]/60 mb-1">
+                    {t(language, "E-Mail-Adresse", "Email address", "Adresse e-mail")} *
+                  </label>
+                  <input
+                    required
+                    type="email"
+                    value={patient.email}
+                    onChange={e => setP("email", e.target.value)}
+                    placeholder="ihre@email.de"
+                    className="w-full border border-[#c9a96a]/40 bg-transparent px-3 py-2 text-sm focus:outline-none focus:border-[#c9a96a] transition-colors"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs tracking-[0.2em] uppercase text-[#1f2420]/60 mb-1">
+                    {t(language, "Telefon (optional)", "Phone (optional)", "Téléphone (facultatif)")}
+                  </label>
+                  <input
+                    value={patient.telefon}
+                    onChange={e => setP("telefon", e.target.value)}
+                    placeholder="+49 …"
+                    className="w-full border border-[#c9a96a]/40 bg-transparent px-3 py-2 text-sm focus:outline-none focus:border-[#c9a96a] transition-colors"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="mt-2 px-8 py-4 bg-[#c9a96a] text-[#1f2420] text-xs tracking-[0.3em] uppercase hover:bg-[#3a4a3f] hover:text-white transition-all duration-500"
+                >
+                  {t(language, "Termin verbindlich anfragen", "Confirm appointment request", "Confirmer la demande de rendez-vous")}
+                </button>
+              </form>
             )}
 
             {confirmed && (
               <div className="mt-8 p-6 bg-[#3a4a3f]/10 border-l-4 border-[#c9a96a] reveal">
-                <p className="font-serif text-lg text-[#3a4a3f]">
+                <p className="font-serif text-lg text-[#3a4a3f] mb-2">
                   {language === "en"
-                    ? <>✓ Request for <strong>{MONTHS[language][month]} {selected}, {year}</strong> at <strong>{selectedTime}</strong> sent. I will reply within 24 hours.</>
+                    ? <>✓ Request for <strong>{MONTHS[language][month]} {selected}, {year}</strong> at <strong>{selectedTime}</strong> sent.</>
                     : language === "fr"
-                    ? <>✓ Demande pour le <strong>{selected} {MONTHS[language][month]} {year}</strong> à <strong>{selectedTime}</strong> envoyée. Je vous répondrai dans les 24 heures.</>
-                    : <>✓ Anfrage für den <strong>{selected}. {MONTHS[language][month]} {year}</strong> um <strong>{selectedTime}</strong> gesendet. Ich melde mich innerhalb von 24 Stunden.</>}
+                    ? <>✓ Demande pour le <strong>{selected} {MONTHS[language][month]} {year}</strong> à <strong>{selectedTime}</strong> envoyée.</>
+                    : <>✓ Anfrage für den <strong>{selected}. {MONTHS[language][month]} {year}</strong> um <strong>{selectedTime}</strong> gesendet.</>}
+                </p>
+                <p className="text-sm text-[#1f2420]/70 font-light">
+                  {t(language,
+                    `Vielen Dank, ${patient.vorname}. Ich melde mich innerhalb von 24 Stunden unter ${patient.email}.`,
+                    `Thank you, ${patient.vorname}. I will reply within 24 hours to ${patient.email}.`,
+                    `Merci, ${patient.vorname}. Je vous répondrai dans les 24 heures à ${patient.email}.`
+                  )}
                 </p>
               </div>
             )}
