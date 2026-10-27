@@ -25,10 +25,14 @@ export default function Impressum() {
               {t(language, "Angaben gemäß § 5 TMG", "Information pursuant to § 5 TMG", "Informations conformément au § 5 TMG")}
             </h2>
             <div className="border-l-2 border-[#c9a96a] pl-6 space-y-1">
-              <p className="font-medium text-[#1f2420]">Pastor Félix Hélan</p>
-              <p>{t(language, "Geistliche Begleitung & Seelsorge", "Pastoral Accompaniment & Soul Care", "Accompagnement pastoral & Cure d'âme")}</p>
-              <p>Adventgemeinde Aschaffenburg</p>
-              <p>Bayern, Deutschland</p>
+              <p className="font-medium text-[#1f2420]">Félix Hélan</p>
+              <p>{t(language,
+                "Pastor der Adventgemeinde Aschaffenburg · Master in Seelsorge · Doktor der Missiologie",
+                "Pastor of the Adventist Church of Aschaffenburg · Master's in Counselling · Doctor of Missiology",
+                "Pasteur de l'Église adventiste d'Aschaffenburg · Master en Relation d'Aide · Docteur en Missiologie"
+              )}</p>
+              <p>Strietwaldstrasse 83</p>
+              <p>63741 Aschaffenburg, Deutschland</p>
             </div>
           </section>
 
@@ -42,11 +46,13 @@ export default function Impressum() {
                 <span className="text-[#c9a96a] text-xs tracking-widest uppercase mr-3">
                   {t(language, "Telefon", "Phone", "Téléphone")}
                 </span>
-                +49 159 0486 0061
+                +49 159 04860061
               </p>
               <p>
                 <span className="text-[#c9a96a] text-xs tracking-widest uppercase mr-3">E-Mail</span>
-                info@miklat-shalom.de
+                <span className="italic text-[#1f2420]/50">
+                  {t(language, "Demnächst verfügbar", "Coming soon", "Bientôt disponible")}
+                </span>
               </p>
             </div>
           </section>

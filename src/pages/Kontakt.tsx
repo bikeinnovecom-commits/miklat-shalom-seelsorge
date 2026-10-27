@@ -199,7 +199,7 @@ export default function Kontakt() {
 
             <div className="grid grid-cols-2 gap-6 pt-4">
               {[
-                { t_de: "Telefon",  t_en: "Phone",    t_fr: "Téléphone",  v: "+49 159 0486 0061" },
+                { t_de: "Telefon",  t_en: "Phone",    t_fr: "Téléphone",  v: "+49 159 04860061" },
                 { t_de: "E-Mail",   t_en: "Email",    t_fr: "E-mail",     v: "info@miklat-shalom.de" },
                 { t_de: "Sabbat",   t_en: "Sabbath",  t_fr: "Sabbat",     v: t(language, "Ruhetag — Stille", "Day of rest — Stillness", "Jour de repos — Silence") },
               ].map(row => (

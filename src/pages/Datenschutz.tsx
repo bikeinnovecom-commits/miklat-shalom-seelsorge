@@ -28,10 +28,15 @@ export default function Datenschutz() {
               {t(language, "1. Verantwortlicher", "1. Data Controller", "1. Responsable du traitement")}
             </h2>
             <div className="border-l-2 border-[#c9a96a] pl-6 space-y-1">
-              <p className="font-medium text-[#1f2420]">Pastor Félix Hélan</p>
-              <p>Adventgemeinde Aschaffenburg · Bayern, Deutschland</p>
-              <p>E-Mail : info@miklat-shalom.de</p>
-              <p>{t(language, "Telefon", "Phone", "Téléphone")} : +49 159 0486 0061</p>
+              <p className="font-medium text-[#1f2420]">Félix Hélan</p>
+              <p>{t(language,
+                "Pastor der Adventgemeinde Aschaffenburg · Doktor der Missiologie",
+                "Pastor of the Adventist Church of Aschaffenburg · Doctor of Missiology",
+                "Pasteur de l'Église adventiste d'Aschaffenburg · Docteur en Missiologie"
+              )}</p>
+              <p>Strietwaldstrasse 83 · 63741 Aschaffenburg, Deutschland</p>
+              <p>{t(language, "Telefon", "Phone", "Téléphone")} : +49 159 04860061</p>
+              <p>E-Mail : <span className="italic text-[#1f2420]/60">{t(language, "Demnächst verfügbar", "Coming soon", "Bientôt disponible")}</span></p>
             </div>
           </section>
 
