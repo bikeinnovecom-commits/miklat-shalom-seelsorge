@@ -57,9 +57,9 @@ export function makeHeroSlides(lang: Language): Slide[] {
         ? <>Guérison par la <em className="gold-shine not-italic">prière</em>.</>
         : <>Heilung durch <em className="gold-shine not-italic">Gebet</em>.</>,
       subtitle: t(lang,
-        "Intercessorisches Gebet und geistliche Begleitung — für die Heilung tiefer emotionaler und seelischer Wunden.",
-        "Intercessory prayer and spiritual accompaniment — for healing deep emotional and soul wounds.",
-        "Prière d'intercession et accompagnement spirituel — pour la guérison de blessures émotionnelles et spirituelles profondes."
+        "Fürbittgebet und geistliche Begleitung — für die Heilung tiefer emotionaler und seelischer Wunden.",
+        "Intercessory prayer and spiritual accompaniment — for the healing of deep emotional and spiritual wounds.",
+        "Prière d'intercession et accompagnement spirituel — pour la guérison de profondes blessures émotionnelles et spirituelles."
       ),
     },
     {
@@ -80,7 +80,7 @@ export function makeHeroSlides(lang: Language): Slide[] {
       img: "/images/2148759181.jpg",
       eyebrow: t(lang, "06 · Trauerbegleitung",         "06 · Grief Accompaniment",     "06 · Accompagnement du deuil"),
       title: lang === "en"
-        ? <>Grief may <em className="gold-shine not-italic">exist</em>.</>
+        ? <>Grief may <em className="gold-shine not-italic">be</em>.</>
         : lang === "fr"
         ? <>Le deuil a le droit <em className="gold-shine not-italic">d'être</em>.</>
         : <>Trauer darf <em className="gold-shine not-italic">sein</em>.</>,
@@ -101,7 +101,7 @@ export function makeHeroSlides(lang: Language): Slide[] {
       subtitle: t(lang,
         "Adventistische Glaubensbegleitung für Menschen, die ihren Weg mit Gott neu entdecken oder vertiefen möchten.",
         "Adventist faith accompaniment for people seeking to rediscover or deepen their walk with God.",
-        "Accompagnement de foi adventiste pour ceux qui souhaitent redécouvrir ou approfondir leur chemin avec Dieu."
+        "Accompagnement spirituel adventiste pour ceux qui souhaitent redécouvrir ou approfondir leur chemin avec Dieu."
       ),
     },
     {
