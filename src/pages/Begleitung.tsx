@@ -46,7 +46,7 @@ export default function Begleitung() {
   ];
 
   const steps = [
-    { n: "I",   t_de: "Gesprächsangebot", t_en: "Conversation offer", t_fr: "Offre d'entretien",     d_de: "Ein unverbindliches erstes Gespräch — um sich kennenzulernen.", d_en: "A non-binding first conversation — to get acquainted.", d_fr: "Un premier entretien sans engagement — pour faire connaissance." },
+    { n: "I",   t_de: "Gesprächsangebot", t_en: "Conversation offer", t_fr: "Offre d'entretien",     d_de: "Ein unverbindliches erstes Gespräch — um sich kennenzulernen.", d_en: "A non-binding first conversation — to get acquainted.", d_fr: "Un premier entretien pour faire connaissance." },
     { n: "II",  t_de: "Kennenlernen",     t_en: "Getting to know",   t_fr: "Prise de connaissance", d_de: "Gemeinsam verstehen, was Ihre Seele bewegt.", d_en: "Understanding together what moves your soul.", d_fr: "Comprendre ensemble ce qui touche votre âme." },
     { n: "III", t_de: "Seelsorgeweg",     t_en: "Pastoral path",     t_fr: "Chemin pastoral",      d_de: "Ich begleite Sie auf dem Weg, der zu Ihrer Situation und Ihrem Glauben passt.", d_en: "I walk with you to find the path that fits your situation and your faith.", d_fr: "Je vous accompagne sur le chemin qui correspond à votre situation et à votre foi." },
     { n: "IV",  t_de: "Nachbegleitung",   t_en: "Follow-up care",    t_fr: "Suivi pastoral",       d_de: "Regelmäßige Begegnungen in Ihrem Rhythmus — mit Sabbatpausen, wenn nötig.", d_en: "Regular meetings at your own rhythm — with Sabbath rest when needed.", d_fr: "Rencontres régulières à votre rythme — avec repos du Sabbat si nécessaire." },
