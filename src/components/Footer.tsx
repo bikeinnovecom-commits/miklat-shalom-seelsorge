@@ -3,15 +3,11 @@ import { useLanguage, t } from "../i18n/LanguageContext";
 
 function FooterEmblem() {
   return (
-    <svg viewBox="0 0 100 100" className="w-14 h-14 mb-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="50" cy="50" r="48" fill="#1f2420" stroke="#c9a96a" strokeWidth="2.5" strokeOpacity="0.5" />
-      <path d="M50 72 C50 72 34 58 34 44 C34 35 41 28 50 28 C59 28 66 35 66 44 C66 58 50 72 50 72Z" fill="none" stroke="#c9a96a" strokeWidth="1.8" opacity="0.7" />
-      <ellipse cx="42" cy="40" rx="6" ry="3.5" fill="#c9a96a" transform="rotate(-30 42 40)" opacity="0.7" />
-      <ellipse cx="58" cy="40" rx="6" ry="3.5" fill="#c9a96a" transform="rotate(30 58 40)" opacity="0.7" />
-      <ellipse cx="44" cy="52" rx="6" ry="3.5" fill="#c9a96a" transform="rotate(-15 44 52)" opacity="0.55" />
-      <ellipse cx="56" cy="52" rx="6" ry="3.5" fill="#c9a96a" transform="rotate(15 56 52)" opacity="0.55" />
-      <line x1="50" y1="28" x2="50" y2="72" stroke="#c9a96a" strokeWidth="1.2" opacity="0.4" />
-    </svg>
+    <img
+      src="/images/logo-miklat-shalom.png"
+      alt="Miklat Shalom"
+      className="w-16 h-16 object-cover rounded-full mb-6 opacity-90"
+    />
   );
 }
 
